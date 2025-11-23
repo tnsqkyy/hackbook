@@ -30,7 +30,7 @@ Tools used to capture, inspect, and analyze network packets.
 
 Tools focused on WiFi hacking, 802.11 frame capture, WPA/PMKID attacks, etc.
 
-→ → **[wireless](./wireless/)**
+→ **[wireless](./wireless/)**
 
 ---
 
