@@ -1,76 +1,50 @@
 # Hackbook
 
-**Hackbook** is my long‑term, structured notebook for becoming a real pentester. It is not just a collection of commands — it is a record of concepts, experiments, failures, and breakthroughs across every domain of cybersecurity.
+**Hackbook** is my long-term, structured notebook for becoming a pentester.  
+It records concepts, experiments, failures, and breakthroughs — not just commands.
 
-This repository will grow over time as I learn more topics. For now, only the **tooling** section exists, but the structure is designed to scale into a complete pentesting knowledge base.
+Currently, only **Tooling** is available, but the repository is designed to scale into a complete offensive-security knowledge base.
 
 ---
 
-## 📦 Current Sections
+## Current Sections
 
-### 🔧 Tooling
+### Tooling
+A curated collection of essential offensive-security tools, covering:
 
-A curated, structured collection of the essential tools every offensive security practitioner must understand.
+- Recon & Scanning  
+- Sniffing & Traffic Analysis  
+- Wireless Attacks  
+- Password Cracking  
+- Exploitation Frameworks  
+- Post-Exploitation  
+- Utilities  
+
+Each tool includes: purpose, internal logic, real attacker use-cases, and practical examples.
 
 → **[Go to /tooling](./tooling/)**
 
-This section includes categories like:
+---
 
-* Recon & Scanning
-* Sniffing & Traffic Analysis
-* Wireless Attacks
-* Password Cracking
-* Exploitation Frameworks
-* Post‑Exploitation
-* Utilities
+## Roadmap
 
-Each category focuses on:
+Planned sections:
 
-* The purpose of the tool
-* How it works internally
-* Real attacker use‑cases
-* Practical examples
+- **Network Fundamentals** — OSI, routing, switching, VLAN, ARP, DHCP, DNS  
+- **Pentesting Workflow** — recon → exploitation → priv-esc → persistence → reporting  
+- **Offensive Techniques** — web, WiFi, bruteforce, phishing, memory exploits  
+- **Defensive Insight** — logs, detection, SIEM  
+- **Labs & Write-ups** — TryHackMe, HackTheBox, custom labs
 
 ---
 
-## 🧭 Future Roadmap
+## Purpose
 
-Hackbook is intended to expand far beyond tooling. Planned sections include:
-
-### 🕸️ Network Fundamentals
-
-Packet flow, OSI logic, routing, switching, VLAN, ARP, DHCP, DNS.
-
-### 🛠️ Pentesting Workflow
-
-Realistic end‑to‑end methodology: recon → exploitation → privilege escalation → persistence → reporting.
-
-### 💥 Offensive Techniques
-
-Bruteforce, phishing, WiFi attacks, web exploitation, buffer overflows.
-
-### 🧱 Defensive Understanding
-
-Detection, logs, SIEM, blue‑team perspective for better offensive skills.
-
-### 📑 Labs & Walkthroughs
-
-Write‑ups of TryHackMe, HackTheBox, and custom labs.
+To build a clear, deep, and practical record of my path from beginner to red teamer, focusing on *why* things work — not just the commands.
 
 ---
 
-## 🎯 Purpose of This Repository
+## Contributions
 
-To build a **permanent record** of my journey from beginner to professional red teamer. Everything is written clearly, deeply, and practically — with a focus on *why* something works, not just the commands.
-
-This is my personal knowledge base, but structured so anyone can learn from it.
-
----
-
-## ⚡ Contributions
-
-This is a personal learning project. PRs are welcome only if they improve clarity, correctness, or structure.
-
----
-
-More sections will appear as the journey continues.
+This is a personal learning project.  
+PRs are welcome only for clarity, correctness, or structure.
