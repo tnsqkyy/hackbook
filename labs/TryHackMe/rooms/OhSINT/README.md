@@ -33,7 +33,7 @@ The investigation begins by examining the provided image for hidden data. Using 
 exiftool WindowsXP.jpg
 ```
 
-![ExifTool Output](assets/images/exiftool-output.png)
+<img src="assets/images/exiftool-output.png" alt="ExifTool Output" width="600"/>
 _Figure 1: Output from exiftool WindowsXP.jpg_
 
 ### Step 2: Answering the Questions
