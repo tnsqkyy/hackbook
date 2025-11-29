@@ -12,7 +12,7 @@ Challenges are organized by their respective platforms to ensure clear navigatio
 
 ### **1. TryHackMe**
 Detailed write-ups, methodologies, and solutions for rooms on the TryHackMe platform.
-→ **[Go to /tryhackme](./tryhackme/)**
+→ **[Go to /TryHackMe](./TryHackMe/)**
 
 ---
 
