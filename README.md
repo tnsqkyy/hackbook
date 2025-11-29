@@ -24,6 +24,11 @@ Each tool includes: purpose, internal logic, real attacker use-cases, and practi
 
 → **[Go to /tooling](./tooling/)**
 
+### Labs & Write-ups
+Documented journeys through various cybersecurity training platforms and custom lab environments.
+
+→ **[Go to /labs](./labs/)**
+
 ---
 
 ## Roadmap
