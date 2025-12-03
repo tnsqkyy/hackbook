@@ -7,6 +7,10 @@ It's where I keep notes on everything I learn: the ideas, the tests, the mistake
 
 ## Current Sections
 
+### Foundations
+The absolute basics of cybersecurity, covering how computers and networks actually work.
+→ **[Go to /foundations](./foundations/)**
+
 ### Tooling
 A hand-picked list of important hacking tools. For each tool, I explain:
 
