@@ -9,6 +9,7 @@ It's where I keep notes on everything I learn: the ideas, the tests, the mistake
 
 ### Foundations
 The absolute basics of cybersecurity, covering how computers and networks actually work.
+
 → **[Go to /foundations](./foundations/)**
 
 ### Tooling
