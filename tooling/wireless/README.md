@@ -1,43 +1,43 @@
 # Wireless Attacks
 
-The **wireless** category covers Wi-Fi hacking, 802.11 frame behavior, capture methods, and real attack workflows. The goal is to understand how wireless protocols behave at the packet level — not just how to run commands.
+This section is all about hacking WiFi. We'll look at how the data flies through the air, how to capture it, and how real attacks work.
 
-Wireless attacks are a common entry point in real assessments, so mastering them is essential.
+The goal is to understand what's happening with the raw data, not just to memorize commands. Breaking into WiFi is a common way for hackers to get into a network, so learning this is super important.
 
 ---
 
 ## 📡 What This Section Covers
 
-- 802.11 frames (management, control, data)  
-- Monitor mode, injection, chipset capabilities  
-- Capturing WPA/WPA2 handshakes  
-- PMKID attacks  
-- Deauthentication and frame manipulation  
-- Converting captures to crackable formats  
-- Tool workflows and analysis techniques  
+-   The different types of WiFi data (frames)
+-   How to put your WiFi card in "monitor mode"
+-   Grabbing WPA/WPA2 handshakes
+-   PMKID attacks (another way to get in)
+-   Kicking devices off the network (deauth attacks)
+-   Getting captures ready for password cracking
+-   How to use the tools together
 
 ---
 
 ## 🔧 Tools Included
 
-Each tool includes its own README.
+Each tool has its own README file.
 
-### **Aircrack-NG Suite**  
-Classic Wi-Fi auditing toolkit for capture, attack, conversion, and cracking.  
+### **Aircrack-NG Suite**
+The original WiFi hacking toolkit for capturing, attacking, and cracking.
 → **[Go to /aircrack-ng](./aircrack-ng/)**
 
 (Other tools like **hcxdumptool** and **wifite** will be added later.)
 
 ---
 
-## 🧠 Philosophy
+## 🧠 My Goal
 
-Wireless hacking is about understanding:
+Hacking WiFi is really about understanding:
 
-- how frames move through the air,  
-- how clients authenticate,  
-- how access points respond,  
-- and how attackers can capture or disrupt those interactions.
+-   How data packets move through the air.
+-   How devices prove who they are to the network.
+-   How the WiFi router (access point) answers.
+-   How an attacker can grab or mess up that conversation.
 
 Every guide here focuses on **why the attack works**, not just the commands.
 
@@ -45,4 +45,4 @@ Every guide here focuses on **why the attack works**, not just the commands.
 
 → **[Go to /aircrack-ng](./aircrack-ng/)**
 
-More tools and techniques will be added as the wireless section grows.
+More tools will be added as I learn them.

@@ -1,36 +1,31 @@
 # Hackbook
 
-**Hackbook** is my long-term, structured notebook for becoming a pentester.  
-It records concepts, experiments, failures, and breakthroughs — not just commands.
+**Hackbook** is my personal notebook for learning ethical hacking.  
+It's where I keep notes on everything I learn: the ideas, the tests, the mistakes, and the 'aha!' moments—not just the commands.
 
-Currently, only **Tooling** is available, but the repository is designed to scale into a complete offensive-security knowledge base.
+Right now, the **Tooling** section is the most complete, but I plan to grow this into a full library of hacking knowledge.
 
 ---
 
 ## Current Sections
 
 ### Tooling
-A curated collection of essential offensive-security tools, covering:
+A hand-picked list of important hacking tools. For each tool, I explain:
 
-- Recon & Scanning  
-- Sniffing & Traffic Analysis  
-- Wireless Attacks  
-- Password Cracking  
-- Exploitation Frameworks  
-- Post-Exploitation  
-- Utilities  
-
-Each tool includes: purpose, internal logic, real attacker use-cases, and practical examples.
+- What it's for
+- How it works inside
+- How real attackers use it
+- Practical examples
 
 → **[Go to /tooling](./tooling/)**
 
 ### Labs & Write-ups
-Documented journeys through various cybersecurity training platforms and custom lab environments.
+My notes and solutions from cybersecurity training sites like TryHackMe and my own practice labs.
 
 → **[Go to /labs](./labs/)**
 
 ### Malware
-Analysis and educational re-implementation of malware to understand their internal mechanics.
+I rebuild simple malware here for learning purposes, to understand how it works from the inside.
 
 → **[Go to /malware](./malware/)**
 
@@ -38,23 +33,23 @@ Analysis and educational re-implementation of malware to understand their intern
 
 ## Roadmap
 
-Planned sections:
+What's coming next:
 
-- **Network Fundamentals** — OSI, routing, switching, VLAN, ARP, DHCP, DNS  
-- **Pentesting Workflow** — recon → exploitation → priv-esc → persistence → reporting  
-- **Offensive Techniques** — web, WiFi, bruteforce, phishing, memory exploits  
-- **Defensive Insight** — logs, detection, SIEM  
-- **Labs & Write-ups** — TryHackMe, HackTheBox, custom labs
+- **Network Fundamentals** — OSI model, routing, DNS, etc.
+- **The Hacker's Workflow** — From first look to final report.
+- **Hacking Techniques** — Web, WiFi, password attacks, and more.
+- **How to Defend** — Thinking like a defender (logs, detection).
+- **More Labs** — HackTheBox, and others.
 
 ---
 
 ## Purpose
 
-To build a clear, deep, and practical record of my path from beginner to red teamer, focusing on *why* things work — not just the commands.
+To create a clear and useful record of my journey from beginner to professional, focusing on ***why*** **things work, not just the commands.**
 
 ---
 
 ## Contributions
 
-This is a personal learning project.  
-PRs are welcome only for clarity, correctness, or structure.
+This is my personal learning project.  
+If you see a mistake or a way to make things clearer, feel free to suggest a change (make a pull request)!

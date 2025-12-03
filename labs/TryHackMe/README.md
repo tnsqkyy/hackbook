@@ -1,7 +1,9 @@
 # TryHackMe
 
-This directory contains write-ups for the TryHackMe rooms I have completed. Each room has its own directory containing a detailed write-up and any necessary files.
+Here are my notes and walkthroughs for the rooms I've finished on TryHackMe.
+
+Each room gets its own folder with a full guide and any files needed to solve it.
 
 ## Rooms
 
-*   **[OhSINT](./rooms/OhSINT/)**: A room focused on Open-Source Intelligence (OSINT) techniques.
+*   **[OhSINT](./rooms/OhSINT/)**: A room all about Open-Source Intelligence (OSINT).

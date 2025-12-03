@@ -1,9 +1,11 @@
 # Traffic Analysis & Sniffing
 
-This category focuses on tools used to capture, inspect, and analyze network packets. Understanding traffic is fundamental to identifying vulnerabilities, debugging applications, and detecting malicious activity.
+This section is about tools that let you "sniff" the data traveling across a network.
+
+By capturing and looking at these packets, you can find security holes, fix app problems, or spot bad guys on the network.
 
 ---
 
 ## Tools
 
-*   **[Wireshark](./wireshark/)**: The world's foremost network protocol analyzer.
+*   **[Wireshark](./wireshark/)**: The most popular tool in the world for looking at network traffic.

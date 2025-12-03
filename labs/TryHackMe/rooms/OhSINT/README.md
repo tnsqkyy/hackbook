@@ -1,64 +1,52 @@
-# OhSINT Write-up
+# OhSINT Walkthrough
 
 **Room Link:** [https://tryhackme.com/room/ohsint](https://tryhackme.com/room/ohsint)
 
-This room is a classic introduction to Open-Source Intelligence (OSINT). It demonstrates just how much information can be uncovered starting from a single file—in this case, just one image. By following a trail of digital breadcrumbs, we will discover a person's online identity, location, email, and even their password.
+This room is a great introduction to Open-Source Intelligence (OSINT). It shows how much you can find starting with just one picture. By following a trail of digital clues, we'll find someone's online identity, where they live, their email, and even their password.
 
 ---
 
-## 🎯 The Challenge
+## 🚀 The Mission & How I Solved It
 
-Starting with only the `WindowsXP.jpg` image located in the [`./task-files/`](./task-files/) directory, can you answer the following questions?
+Our mission starts with a single image: `WindowsXP.jpg`, which you can find in the [`./task-files/`](./task-files/) folder. Let's find the answers to the room's questions.
 
-1.  What is this user's avatar of?
-2.  What city is this person in?
-3.  What is the SSID of the WAP (Wireless Access Point) he connected to?
-4.  What is his personal email address?
-5.  What site did you find his email address on?
-6.  Where has he gone on holiday?
-7.  What is the person's password?
+### Step 1: Look at the Picture's Hidden Info
 
----
-
-## 🚀 Walkthrough & Methodology
-
-This section details the step-by-step process used to answer the questions above.
-
-### Step 1: Initial Metadata Analysis
-
-The investigation begins by examining the provided image for hidden data. Using a tool like [**ExifTool**](../../../../tooling/recon/exiftool/README.md) reveals the copyright holder's name, which becomes the primary pivot point for the entire challenge.
+First, I checked the image for any hidden data (metadata). Using a tool like [**ExifTool**](../../../../tooling/recon/exiftool/README.md) gave me the first big clue: the copyright holder's name. This username is the key to the whole challenge.
 
 ```bash
-# Command to extract metadata
+# This is the command I used
 exiftool WindowsXP.jpg
 ```
 
 <figure>
   <img src="assets/images/exiftool-output.png" alt="ExifTool Output" width="600"/>
-  <figcaption>Figure 1: Output from exiftool WindowsXP.jpg</figcaption>
+  <figcaption>Figure 1: The output from ExifTool, showing the username.</figcaption>
 </figure>
+
+---
 
 ### Step 2: Answering the Questions
 
-With the initial clue (the username), we can now find the answers.
+With the username, I could start hunting for the answers.
 
-*   **Answer 1 (Avatar):** `[Answer Here]`
-    *   *Methodology: Search the username on social media (e.g., Twitter).*
+*   **1. What is this user's avatar of?** `[Answer Here]`
+    *   **How I found it:** I searched the username on Twitter and found their profile picture.
 
-*   **Answer 2 (City):** `[Answer Here]`
-    *   *Methodology: Find a BSSID in the user's posts and geolocate it using a service like WiGLE.net.*
+*   **2. What city is this person in?** `[Answer Here]`
+    *   **How I found it:** I found a BSSID (like a WiFi router's fingerprint) in one of their posts. I used a site called WiGLE.net to see where that BSSID is located on a map.
 
-*   **Answer 3 (SSID):** `[Answer Here]`
-    *   *Methodology: The SSID is usually found along with the BSSID information on WiGLE.net.*
+*   **3. What is the SSID of the WiFi he connected to?** `[Answer Here]`
+    *   **How I found it:** WiGLE.net also showed the name (SSID) of the WiFi network.
 
-*   **Answer 4 (Email):** `[Answer Here]`
-    *   *Methodology: Look for the user's profile on developer or portfolio sites like GitHub.*
+*   **4. What is his personal email address?** `[Answer Here]`
+    *   **How I found it:** I searched for the username on GitHub and found the email address in their profile.
 
-*   **Answer 5 (Email Source):** `[Answer Here]`
-    *   *Methodology: The source site from the previous step.*
+*   **5. What site did you find his email address on?** `[Answer Here]`
+    *   **How I found it:** From the step above, it was GitHub.
 
-*   **Answer 6 (Holiday):** `[Answer Here]`
-    *   *Methodology: Check the user's blog or social media posts for travel mentions.*
+*   **6. Where has he gone on holiday?** `[Answer Here]`
+    *   **How I found it:** I looked for a personal blog linked from their other profiles and found a post about a trip.
 
-*   **Answer 7 (Password):** `[Answer Here]`
-    *   *Methodology: Inspect the source code of the user's personal website or blog for hidden comments.*
+*   **7. What is the person's password?** `[Answer Here]`
+    *   **How I found it:** On the personal blog, I viewed the page's HTML source code and found the password hidden in a comment.

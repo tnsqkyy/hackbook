@@ -1,77 +1,77 @@
 # Tooling
 
-The **tooling** directory contains the core tools every pentester must understand — focusing on *why* each tool matters, how it works internally, and how it fits into real offensive workflows.
+The **tooling** section is all about the tools of the trade. For every tool, I focus on *why* it's important, how it works, and how it's used in a real hacking scenario.
 
-Pentesting is not about memorizing commands. It’s about understanding the tools and the logic behind them.
+Hacking is not about memorizing commands. It’s about understanding the tools and the logic behind them.
 
 ---
 
 ## 🔍 Categories
 
-Tools are organized by offensive capability to keep the structure scalable as Hackbook grows.
+Tools are sorted by what they do, to keep things organized as this project grows.
 
 ### **1. Reconnaissance & Scanning**
-Discover hosts, services, and ports.  
+Finding computers, services, and open ports on a network.
 → **[Go to /recon](./recon/)**
 
 ---
 
 ### **2. Traffic Analysis & Sniffing**
-Capture, inspect, and analyze packets.  
+Grabbing and looking at the data that moves across a network.
 → **[Go to /sniffing](./sniffing/)**
 
 ---
 
 ### **3. Wireless Attacks**
-802.11 frames, WPA/PMKID attacks, WiFi exploitation.  
+Hacking WiFi networks.
 → **[Go to /wireless](./wireless/)**
 
 ---
 
 ### **4. Password Cracking & Hash Attacks**
-Bruteforce, hash cracking, key generation.  
+Guessing passwords and cracking password hashes.
 → **[Go to /password-cracking](./password-cracking/)**
 
 ---
 
 ### **5. Exploitation Frameworks**
-Modular platforms for automating exploitation.  
+Toolkits that make hacking easier and more automatic.
 → **[Go to /exploitation](./exploitation/)**
 
 ---
 
 ### **6. Post-Exploitation & Privilege Escalation**
-Maintain access, escalate privileges, lateral movement.  
+What to do after you get in: keep access, get more power, and move around.
 → **[Go to /post-exploitation](./post-exploitation/)**
 
 ---
 
 ### **7. Utilities & System Essentials**
-Helper tools that support the pentest workflow.  
+Helpful little tools that make a hacker's job easier.
 → **[Go to /utilities](./utilities/)**
 
 ---
 
-## 🧠 Philosophy
+## 🧠 My Goal
 
-Each tool entry explains:
+My goal for each tool is to explain:
 
-* What it does  
-* Why a pentester needs it  
-* How it works internally (protocols, packet flow, OS interaction)  
-* Real attacker use-cases  
-* Example commands  
+*   What it does
+*   Why a hacker needs it
+*   How it works on the inside
+*   How real attackers use it
+*   Example commands
 
-This section is about understanding, not memorization.
+This section is about understanding, not memorizing.
 
 ---
 
-## 📈 Future Scope
+## 📈 What's Next
 
-As Hackbook expands, tooling will integrate with:
+Later, I'll connect these tools to:
 
-* Network fundamentals  
-* Pentesting methodology  
-* Labs & walkthroughs  
+*   Basic network knowledge
+*   The steps of a hacking project
+*   The labs and walkthroughs
 
 ---

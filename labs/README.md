@@ -1,39 +1,40 @@
 # Labs & Walkthroughs
 
-The **labs** directory is a dedicated space for documenting my journey through various cybersecurity training platforms and custom lab environments. It focuses on practical application, problem-solving methodologies, and detailed write-ups of challenges.
+The **labs** section is where I post my notes and walkthroughs from different hacking practice sites and my own custom labs.
 
-This section is about applying theoretical knowledge to real-world (simulated) scenarios, understanding attack paths, and documenting the process from initial access to flag capture.
+It's all about putting theory into practice and writing down how I solve different challenges, from the first step to the last.
 
 ---
 
 ## 🔍 Platforms
 
-Challenges are organized by their respective platforms to ensure clear navigation and context.
+Challenges are sorted by the website or platform they came from.
 
 ### **1. TryHackMe**
-Detailed write-ups, methodologies, and solutions for rooms on the TryHackMe platform.
+My notes and step-by-step solutions for rooms on TryHackMe.
 → **[Go to /TryHackMe](./TryHackMe/)**
 
 ---
 
-## 🧠 Philosophy
+## 🧠 My Goal
 
-Each lab write-up explains:
+For each lab walkthrough, I try to explain:
 
-*   **Objective:** What was the goal of the lab/room?
-*   **Methodology:** The steps taken, tools used, and thought process.
-*   **Vulnerabilities:** Identification and exploitation of vulnerabilities.
-*   **Solutions:** How the flags were obtained and the challenge completed.
-*   **Learnings:** Key takeaways and new concepts learned.
+*   **The Goal:** What was the main objective?
+*   **My Process:** The steps I took, the tools I used, and what I was thinking.
+*   **The Weakness:** Where the security flaw was and how to use it.
+*   **The Solution:** How I beat the challenge and got the flag.
+*   **What I Learned:** The main lessons or new tricks I picked up.
 
-This section emphasizes practical skills and documentation of the problem-solving process.
+The idea is to show my practical skills and to have a record of how I solve problems.
 
 ---
 
-## 📈 Future Scope
+## 📈 What's Next
 
-As Hackbook expands, this section will include:
+As I do more, I'll add more labs from other places:
 
-*   HackTheBox machine write-ups
-*   Custom lab environment setups and solutions
-*   CTF (Capture The Flag) challenge solutions
+*   HackTheBox machine walkthroughs
+*   Notes on building my own practice labs
+*   Solutions from CTF (Capture The Flag) events
+

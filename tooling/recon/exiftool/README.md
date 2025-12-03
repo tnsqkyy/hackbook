@@ -1,19 +1,19 @@
 # ExifTool
 
-**ExifTool** is a powerful command-line utility for reading, writing, and editing metadata (EXIF, IPTC, XMP, etc.) in a wide variety of file types. It is an essential tool for OSINT investigations, allowing you to extract hidden data from images, documents, and other files.
+**ExifTool** is a command-line tool for reading hidden information (metadata) inside files. Think of it like a detective's magnifying glass for digital files. It's a key tool for OSINT (Open-Source Intelligence) because it can pull out secret data from images, documents, and more.
 
-This guide covers the basic workflow for using ExifTool to analyze a file for hidden intelligence.
+This guide shows you how to use ExifTool to find hidden clues in a file.
 
 ---
 
-## 📌 Overview
+## 📌 What's it for?
 
-ExifTool is used for:
+ExifTool can help you:
 
-*   **Reading Metadata:** Viewing all metadata tags embedded in a file.
-*   **Extracting Specific Information:** Filtering for specific data points like GPS coordinates, camera models, or software versions.
-*   **Analyzing File History:** Finding timestamps, author information, and copyright notices.
-*   **Revealing Hidden Data:** Uncovering comments or other user-added information.
+*   **Read Metadata:** See all the hidden info stored in a file.
+*   **Find Specific Clues:** Look for things like GPS location, camera type, or the software used to create the file.
+*   **Check File History:** Find out who made the file and when.
+*   **Find Hidden Comments:** Uncover secret notes the creator might have left inside.
 
 ---
 
@@ -31,9 +31,9 @@ sudo pacman -S perl-image-exiftool
 
 ---
 
-## 2. Basic Usage
+## 2. Basic Use
 
-To read all available metadata from a file, simply provide the filename as an argument. This command will produce a clean, human-readable list of all tags and their values.
+To see all the metadata in a file, just give ExifTool the filename. It will print a clean list of everything it finds.
 
 ```bash
 exiftool <file-name>
@@ -41,39 +41,39 @@ exiftool <file-name>
 
 ---
 
-## 3. Example: OhSINT Room
+## 3. Example: The OhSINT Room
 
-In the OhSINT room on TryHackMe, you are given an image file, `WindowsXP.jpg`. You can use ExifTool to find critical information hidden within it.
+In the OhSINT room on TryHackMe, you get an image named `WindowsXP.jpg`. We can use ExifTool to find important clues inside it.
 
 ```bash
 exiftool labs/TryHackMe/rooms/OhSINT/task-files/WindowsXP.jpg
 ```
 
-Look for interesting tags such as:
-*   **Copyright:** May reveal a username or handle.
-*   **GPS Position:** If present, provides exact coordinates where the photo was taken.
+Look for interesting lines in the output, like:
+*   **Copyright:** This might be a username!
+*   **GPS Position:** If this is here, you know the exact spot the photo was taken.
 
 ---
 
-## 4. Common Use Cases & Flags
+## 4. Common Questions & Flags
 
-While the default output is useful, you can use flags to filter the results.
+You can use flags to ask ExifTool specific questions.
 
-| Goal                                   | Command                               |
-| -------------------------------------- | ------------------------------------- |
-| **Extract only GPS-related tags**      | `exiftool -gps* <file-name>`          |
-| **List metadata by group**             | `exiftool -g1 <file-name>`            |
-| **Show tag names, not descriptions**   | `exiftool -s <file-name>`             |
-| **Extract a single specific tag**      | `exiftool -Copyright <file-name>`     |
+| I want to...                            | Command                               |
+| --------------------------------------- | ------------------------------------- |
+| **See only GPS info?**                  | `exiftool -gps* <file-name>`          |
+| **See info grouped by category?**       | `exiftool -g1 <file-name>`            |
+| **See the short tag names?**            | `exiftool -s <file-name>`             |
+| **Get just one specific thing?**        | `exiftool -Copyright <file-name>`     |
 
 ---
 
-## 📚 Notes & Understanding
+## 📚 Things to Remember
 
-*   **Not All Files Have Metadata:** Many platforms (like Twitter and Facebook) automatically strip metadata from uploaded images for privacy reasons. A lack of metadata can be as informative as its presence.
-*   **Editing and Removing Data:** ExifTool can also be used to remove metadata. For example, to strip all metadata from a file and create a new one:
+*   **Not every file has metadata:** Many sites like Twitter and Facebook remove this hidden info when you upload pictures. Sometimes, the fact that there's *no* metadata is a clue itself.
+*   **You can also remove metadata:** ExifTool can be used to wipe a file clean. To remove all metadata, you can run this command:
     ```bash
     exiftool -all= <file-name>
     ```
-*   **File Support:** ExifTool supports a huge range of files, not just images. Try it on PDFs, Word documents, and audio files.
+*   **It's not just for images:** Try it on PDFs, Word documents, or music files. You might be surprised what you find.
 
