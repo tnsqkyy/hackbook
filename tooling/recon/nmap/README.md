@@ -41,7 +41,7 @@ Kali / ParrotOS: preinstalled.
 The first step is to find which hosts are online. A **ping scan** (`-sn`) disables port scanning and only reports responsive hosts. This is a low-noise way to create a list of potential targets.
 
 ```bash
-# Scan an entire CIDR block (common)
+# Scan an entire CIDR block (e.g., a range of IPs)
 nmap -sn 192.168.1.0/24
 ```
 

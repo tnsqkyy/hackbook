@@ -12,7 +12,7 @@ Starting with only the `WindowsXP.jpg` image located in the [`./task-files/`](./
 
 1.  What is this user's avatar of?
 2.  What city is this person in?
-3.  What is the SSID of the WAP he connected to?
+3.  What is the SSID of the WAP (Wireless Access Point) he connected to?
 4.  What is his personal email address?
 5.  What site did you find his email address on?
 6.  Where has he gone on holiday?

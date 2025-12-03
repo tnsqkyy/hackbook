@@ -22,7 +22,7 @@ This is about turning a sea of packets into actionable intelligence.
 
 ## 1. Get a Capture File
 
-Unlike a live capture tool, your first step is to have a `.pcap` or `.pcapng` file. These can come from:
+Unlike a live capture tool, your first step is to have a `.pcap` or `.pcapng` file (common file formats for captured network traffic). These can come from:
 
 *   Tools like `tcpdump` or `aircrack-ng`.
 *   Downloading sample captures from online repositories (e.g., Wireshark's Sample Captures).

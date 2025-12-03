@@ -29,6 +29,11 @@ Documented journeys through various cybersecurity training platforms and custom 
 
 → **[Go to /labs](./labs/)**
 
+### Malware
+Analysis and educational re-implementation of malware to understand their internal mechanics.
+
+→ **[Go to /malware](./malware/)**
+
 ---
 
 ## Roadmap
