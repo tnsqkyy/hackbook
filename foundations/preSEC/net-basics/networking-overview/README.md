@@ -27,9 +27,12 @@ Because computer networks are a huge part of our daily lives—running everythin
 
 Now that we know a network is just a bunch of connected devices, what exactly *is* the Internet?
 
-The **Internet** is one giant, worldwide network made up of many smaller networks all connected together.
+The **Internet** is one giant, worldwide network made up of many smaller networks all connected together. It's like a massive web linking millions of smaller networks.
 
-Let's go back to our 'group of friends' example. Imagine your friend group (a small network) wants to talk to another group of friends. But you are the only person who knows someone from the other group. To get a message to them, it has to go *through you*. In this case, you are acting like a **router**, connecting two different networks. The Internet works the same way, but on a massive scale, with special devices called routers that connect all the small networks.
+![Internet Diagram](./assets/images/internet_overview.png)
+*Figure: This diagram shows how your laptop (in Network B) uses the Internet to reach services like Github.com (in Network A) and Google.com (in Network C).*
+
+To get a clearer picture, look at the diagram above. You can see how different private networks (like your home network) connect to the big "Internet cloud" to talk to services hosted in other networks.
 
 The Internet started in the late 1960s as a U.S. military project called **ARPANET**. But the Internet we use today, with websites and links (the **World Wide Web** or **WWW**), was really born in 1989 when it was invented by Tim Berners-Lee. That's when it became a massive library for storing and sharing information.
 
