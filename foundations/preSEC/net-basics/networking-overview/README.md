@@ -25,5 +25,17 @@ Because computer networks are a huge part of our daily lives—running everythin
 
 ### 🌐 Part 2: What is the Internet?
 
-*(This section will be added later.)*
+Now that we know a network is just a bunch of connected devices, what exactly *is* the Internet?
 
+The **Internet** is one giant, worldwide network made up of many smaller networks all connected together.
+
+Let's go back to our 'group of friends' example. Imagine your friend group (a small network) wants to talk to another group of friends. But you are the only person who knows someone from the other group. To get a message to them, it has to go *through you*. In this case, you are acting like a **router**, connecting two different networks. The Internet works the same way, but on a massive scale, with special devices called routers that connect all the small networks.
+
+The Internet started in the late 1960s as a U.S. military project called **ARPANET**. But the Internet we use today, with websites and links (the **World Wide Web** or **WWW**), was really born in 1989 when it was invented by Tim Berners-Lee. That's when it became a massive library for storing and sharing information.
+
+So, how does this all fit together? Think of your home network (your laptop, phone, and smart TV) as a **private network**. It's your own little bubble. When you connect that bubble to the outside world (through your Internet Service Provider), you're joining a **public network**.
+
+The Internet is just one giant public network made up of billions of smaller private networks all linked together. There are two main types of networks:
+
+*   A **Private Network**: A network that is not connected to the internet (like a home or office network).
+*   A **Public Network**: A network that is connected to the internet.
