@@ -77,7 +77,7 @@ In a ring topology, devices are connected directly to each other in a closed loo
 
 Switches are like the traffic cops of a network. They are special devices designed to connect many other devices, such as computers, using Ethernet cables. You'll usually find switches in bigger networks because they're great at connecting a lot of different devices. They come with many "ports" where devices can plug in—you might see switches with 4, 8, 16, 24, 32, or even 64 ports!
 
-Switches are much smarter and more efficient than older network devices like hubs or repeaters. A switch keeps a record of exactly which device is connected to which port. So, when a switch gets a piece of data (called a "packet"), instead of sending it to every single port like a hub would, it sends that packet directly and only to the device it's meant for. This drastically cuts down on unnecessary network traffic and makes the network run much smoother and faster!
+Switches are much smarter and more efficient than older network devices like hubs or repeaters. A switch keeps a record of exactly which device is connected to which port. So, when a switch gets a piece of data (called a "packet"), instead of sending it to **every single** port like a hub would, it sends that packet directly and only to the device it's meant for. This drastically cuts down on unnecessary network traffic and makes the network run much smoother and faster!
 
 You can also connect switches and routers together. This is a clever way to make your network more reliable (we call this "redundancy"). By adding multiple paths for data to travel, if one path ever goes down, the data can simply take another route. This means your network won't have any downtime, even if it might take a tiny bit longer for packets to reach their destination sometimes.
 
@@ -99,4 +99,35 @@ Routing is the process where data finds its way from one network to another. It'
   <img src="assets/images/router-diagram.png" alt="Router Diagram" width="600"/>
   <br/>
   <em>Figure 5: A diagram illustrating a router connecting two different networks.</em>
+</p>
+
+---
+
+## 4. Subnetting
+
+Imagine you have a huge box of mixed LEGO bricks. Subnetting is like sorting those bricks into smaller, organized bins based on their color or size. In networking, we do the same thing. Network administrators use subnetting to split a large network into smaller, more manageable sections, or "sub-networks."
+
+This is done using a **subnet mask**, which is just a set of numbers that tells the network which part of an IP address is the "network" part and which part is the "device" part. An IP address is made of four numbers (called octets), and a subnet mask looks very similar.
+
+In any subnet, IP addresses are used in three key ways:
+
+*   **Network Address:** This is like the "street name" for your sub-network. It identifies the network itself but isn't assigned to any single device. For example, a device with the IP address `192.168.1.10` is on the network `192.168.1.0`.
+*   **Host Address:** This is the "house number" for a specific device on that street. Each device (like your laptop or phone) gets a unique host address so data can find it. For example, `192.168.1.10` could be your laptop.
+*   **Default Gateway:** This is the "exit" off your street. It’s a special address given to a device (usually a router) that knows how to send information to *other* networks. If your laptop wants to talk to a website on the internet, it sends the data to the default gateway first.
+
+Subnetting is great for efficiency and security. It lets you create separate zones within your network while still allowing them to connect to the wider internet.
+
+#### **Example: A Small Business Network**
+
+Consider a small business office. You'd want to keep the company's internal network separate from any public Wi-Fi you offer to guests.
+
+*   **Subnet 1 (Employee Network):** This network is for company computers, servers, and sensitive internal devices. Only employees have access.
+*   **Subnet 2 (Guest Wi-Fi):** This network is for visitors and customers. It provides internet access but is isolated from the main employee network for security.
+
+By creating these separate subnets, the business ensures its critical data and systems are protected, even if the guest Wi-Fi gets compromised.
+
+<p align="center">
+  <img src="assets/images/subnet-diagram.png" alt="Subnet Diagram" width="600"/>
+  <br/>
+  <em>Figure 6: A diagram showing a router creating two separate subnets for different types of networks in a small business.</em>
 </p>
