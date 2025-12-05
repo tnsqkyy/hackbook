@@ -70,3 +70,19 @@ In a ring topology, devices are connected directly to each other in a closed loo
 *   **Disadvantages:**
     *   **Inefficient Data Travel:** Data might have to hop through many other devices before it gets where it needs to go, which isn't very efficient.
     *   **Entire Network Can Fail:** This is a double-edged sword. A single fault—like a cut cable or a broken device—breaks the loop and brings the entire network down.
+
+---
+
+## 2. Switches
+
+Switches are like the traffic cops of a network. They are special devices designed to connect many other devices, such as computers, using Ethernet cables. You'll usually find switches in bigger networks because they're great at connecting a lot of different devices. They come with many "ports" where devices can plug in—you might see switches with 4, 8, 16, 24, 32, or even 64 ports!
+
+Switches are much smarter and more efficient than older network devices like hubs or repeaters. A switch keeps a record of exactly which device is connected to which port. So, when a switch gets a piece of data (called a "packet"), instead of sending it to every single port like a hub would, it sends that packet directly and only to the device it's meant for. This drastically cuts down on unnecessary network traffic and makes the network run much smoother and faster!
+
+You can also connect switches and routers together. This is a clever way to make your network more reliable (we call this "redundancy"). By adding multiple paths for data to travel, if one path ever goes down, the data can simply take another route. This means your network won't have any downtime, even if it might take a tiny bit longer for packets to reach their destination sometimes.
+
+<p align="center">
+  <img src="assets/images/switch-diagram.png" alt="Switch Diagram" width="600"/>
+  <br/>
+  <em>Figure 4: A diagram illustrating a network switch connecting multiple devices.</em>
+</p>
