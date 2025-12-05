@@ -152,3 +152,32 @@ Once your computer receives the ARP reply, it stores the IP and MAC address pair
   <br/>
   <em>Figure 7: A diagram illustrating the ARP Request and ARP Reply process.</em>
 </p>
+
+---
+
+## 6. DHCP (Dynamic Host Configuration Protocol)
+
+Imagine you're checking into a hotel. You don't pick your room number yourself; the front desk assigns one to you. DHCP works similarly for devices on a network. Its job is to automatically hand out IP addresses to devices as they connect, so you don't have to manually type in an IP address for every phone, laptop, or tablet.
+
+When a new device joins a network, it goes through a four-step process with a **DHCP server** to get its IP address:
+
+1.  **DHCP Discover:** The new device shouts a message to everyone on the network saying, "Hello! I need an IP address. Is there a DHCP server out there?"
+2.  **DHCP Offer:** A DHCP server (if one is available) hears this and replies directly to the device, saying, "Hey, I have an IP address you can use: [suggested IP address]."
+3.  **DHCP Request:** The device then replies back to the server, confirming, "Yes, please! I'd like to use that IP address you offered."
+4.  **DHCP ACK (Acknowledgement):** Finally, the DHCP server sends a last message to the device, saying, "Okay, that IP address is all yours. You're good to go!"
+
+After this handshake, the device has its own unique IP address and can start communicating on the network. This automatic assignment makes managing large networks much easier.
+
+<p align="center">
+  <img src="assets/images/dhcp-protocol-diagram.jpg" alt="DHCP Protocol Diagram" width="600"/>
+  <br/>
+  <em>Figure 8: A diagram illustrating the DHCP Discover, Offer, Request, and ACK process.</em>
+</p>
+
+---
+
+## 🎓 Test Your Knowledge
+
+Ready to check your understanding? Try this short quiz.
+
+→ **[Start the Networking Quiz](https://tnsqkyy.github.io/hackbook/foundations/preSEC/net-basics/lan-concepts/quiz/index.html)**
