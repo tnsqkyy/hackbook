@@ -48,7 +48,7 @@ What's coming next:
 
 ## Purpose
 
-To create a clear and useful record of my journey from beginner to professional, focusing on ***why*** **things work, not just the commands.**
+To create a clear and useful record of my journey from beginner to professional, focusing on **why things work, not just the commands.**
 
 ---
 
