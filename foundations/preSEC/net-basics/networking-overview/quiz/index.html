@@ -7,12 +7,15 @@
     <style>
         body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f7f9fc; color: #4a4a4a; }
         h1 { color: #005A9C; }
-        .question { margin-bottom: 20px; background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .question p { font-weight: bold; }
-        label { display: block; margin-bottom: 8px; }
-        button { background-color: #4285F4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .question { margin-bottom: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .question:hover { transform: translateY(-3px); }
+        .question p { font-weight: bold; font-size: 1.1em; }
+        label { display: block; margin-bottom: 10px; cursor: pointer; }
+        label input { margin-right: 10px; }
+        label strong { color: #005A9C; font-weight: bold; }
+        button { background-color: #4285F4; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.2s; }
         button:hover { background-color: #3367D6; }
-        #results { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+        #results { margin-top: 25px; font-size: 1.3em; font-weight: bold; color: #222; }
     </style>
 </head>
 <body>
@@ -23,37 +26,37 @@
     <form id="quiz-form">
         <div class="question">
             <p>1. What is the permanent, factory-assigned address of a network device called?</p>
-            <label><input type="radio" name="q1" value="A"> A. IP Address</label>
-            <label><input type="radio" name="q1" value="B"> B. MAC Address</label>
-            <label><input type="radio" name="q1" value="C"> C. Home Address</label>
+            <label><input type="radio" name="q1" value="A"> <strong>A.</strong> IP Address</label>
+            <label><input type="radio" name="q1" value="B"> <strong>B.</strong> MAC Address</label>
+            <label><input type="radio" name="q1" value="C"> <strong>C.</strong> Home Address</label>
         </div>
 
         <div class="question">
             <p>2. Which protocol does the "ping" command use to test connectivity?</p>
-            <label><input type="radio" name="q2" value="A"> A. HTTP</label>
-            <label><input type="radio" name="q2" value="B"> B. TCP</label>
-            <label><input type="radio" name="q2" value="C"> C. ICMP</label>
+            <label><input type="radio" name="q2" value="A"> <strong>A.</strong> HTTP</label>
+            <label><input type="radio" name="q2" value="B"> <strong>B.</strong> TCP</label>
+            <label><input type="radio" name="q2" value="C"> <strong>C.</strong> ICMP</label>
         </div>
 
         <div class="question">
             <p>3. What is the main problem with the IPv4 addressing system?</p>
-            <label><input type="radio" name="q3" value="A"> A. It's too slow.</label>
-            <label><input type="radio" name="q3" value="B"> B. It's running out of available addresses.</label>
-            <label><input type="radio" name="q3" value="C"> C. It's not secure.</label>
+            <label><input type="radio" name="q3" value="A"> <strong>A.</strong> It's too slow.</label>
+            <label><input type="radio" name="q3" value="B"> <strong>B.</strong> It's running out of available addresses.</label>
+            <label><input type="radio" name="q3" value="C"> <strong>C.</strong> It's not secure.</label>
         </div>
 
         <div class="question">
             <p>4. Your home network is an example of a:</p>
-            <label><input type="radio" name="q4" value="A"> A. Public Network</label>
-            <label><input type="radio" name="q4" value="B"> B. Private Network</label>
-            <label><input type="radio" name="q4" value="C"> C. Global Network</label>
+            <label><input type="radio" name="q4" value="A"> <strong>A.</strong> Public Network</label>
+            <label><input type="radio" name="q4" value="B"> <strong>B.</strong> Private Network</label>
+            <label><input type="radio" name="q4" value="C"> <strong>C.</strong> Global Network</label>
         </div>
 
         <div class="question">
             <p>5. What is the process of faking a MAC address called?</p>
-            <label><input type="radio" name="q5" value="A"> A. Hacking</label>
-            <label><input type="radio" name="q5" value="B"> B. Spoofing</label>
-            <label><input type="radio" name="q5" value="C"> C. Routing</label>
+            <label><input type="radio" name="q5" value="A"> <strong>A.</strong> Hacking</label>
+            <label><input type="radio" name="q5" value="B"> <strong>B.</strong> Spoofing</label>
+            <label><input type="radio" name="q5" value="C"> <strong>C.</strong> Routing</label>
         </div>
 
         <button type="submit">Check My Answers</button>
@@ -63,9 +66,8 @@
 
     <script>
         document.getElementById('quiz-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form from submitting normally
+            event.preventDefault();
 
-            // Correct answers now match the values A/B/C
             const correctAnswers = {
                 q1: 'B',
                 q2: 'C',
