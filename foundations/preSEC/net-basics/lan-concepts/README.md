@@ -86,3 +86,17 @@ You can also connect switches and routers together. This is a clever way to make
   <br/>
   <em>Figure 4: A diagram illustrating a network switch connecting multiple devices.</em>
 </p>
+
+---
+
+## 3. Routers
+
+Routers are the devices that connect different networks together and help data travel between them. Think of a router as a traffic controller for data, directing information to its correct destination across various networks. Its main job is called "routing"—which is where the name "router" comes from!
+
+Routing is the process where data finds its way from one network to another. It's like a GPS for your network traffic, figuring out the best path for your data to take so it can be delivered successfully. This is super useful when there are many possible paths or connections between different networks.
+
+<p align="center">
+  <img src="assets/images/router-diagram.png" alt="Router Diagram" width="600"/>
+  <br/>
+  <em>Figure 5: A diagram illustrating a router connecting two different networks.</em>
+</p>
