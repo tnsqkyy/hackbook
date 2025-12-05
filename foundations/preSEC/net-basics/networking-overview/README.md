@@ -136,3 +136,10 @@ This output tells us:
 *   We sent **5 packets** and all **5 were received**, meaning **0% packet loss**. The connection is stable!
 *   The average **round-trip time (RTT)** was `32.894 ms`, which is fast for an internet connection.
 
+---
+
+## 🎓 Test Your Knowledge
+
+Think you've got it? Take a quick quiz to test your understanding of these concepts.
+
+→ **[Start the Networking Quiz](./quiz/index.html)**
