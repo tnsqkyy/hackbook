@@ -1,7 +1,7 @@
 # Hackbook
 
 **Hackbook** is my personal notebook for learning ethical hacking.  
-It's where I keep notes on everything I learn: the ideas, the tests, the mistakes, and the 'aha!' moments—not just the commands.
+It's where I keep notes on everything I learn: the ideas, the tests, the mistakes, and the 'aha!' moments — not just the commands.
 
 ---
 
