@@ -59,7 +59,7 @@ Just like us, every device on a network has two main ways to be identified: a '*
 An **IP Address** is like a temporary home address for your device on the network. It's a set of numbers, usually **four groups separated by dots** (like `192.168.1.1`).
 
 <p align="center">
-  <img src="./assets/images/ipv4-structure.png" alt="IPv4 Address Structure" width="600"/>
+  <img src="./assets/images/ipv4-structure.jpg" alt="IPv4 Address Structure" width="600"/>
   <br/>
   <em>Figure 2: The structure of an IPv4 address, broken into four octets.</em>
 </p>
@@ -71,7 +71,7 @@ The important thing is, while IP addresses can change (like moving to a new hous
 Remember private and public networks? Your device will have a **private IP address** to talk to other devices on your home network, and a **public IP address** when it talks to the Internet. Your Internet provider (**ISP**) gives you your public IP address (and charges you for it!).
 
 <p align="center">
-  <img src="./assets/images/private-public-ips.png" alt="Private vs Public IP Addresses" width="600"/>
+  <img src="./assets/images/private-public-ips.jpg" alt="Private vs Public IP Addresses" width="600"/>
   <br/>
   <em>Figure 3: How private IPs in your home network connect to the internet via a single public IP.</em>
 </p>
@@ -81,7 +81,7 @@ With so many devices online (Cisco once thought there'd be 50 billion by 2021!),
 **IPv6** is the newer system. It looks a bit scarier (it uses letters and numbers), but it has a mind-boggling number of addresses (**340 trillion trillion trillion!**), solving the IPv4 shortage. It's also more efficient. For example: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
 
 <p align="center">
-  <img src="./assets/images/ipv4-vs-ipv6.png" alt="IPv4 vs IPv6 Comparison" width="600"/>
+  <img src="./assets/images/ipv4-vs-ipv6.jpg" alt="IPv4 vs IPv6 Comparison" width="600"/>
   <br/>
   <em>Figure 4: A comparison of IPv4 and IPv6 address formats.</em>
 </p>
@@ -91,7 +91,7 @@ With so many devices online (Cisco once thought there'd be 50 billion by 2021!),
 Every device that connects to a network (like your WiFi card) has a special, built-in "**serial number**" from the factory. This is called its **MAC (Media Access Control) address**.
 
 <p align="center">
-  <img src="./assets/images/mac-address-structure.png" alt="MAC Address Structure" width="600"/>
+  <img src="./assets/images/mac-address-structure.jpg" alt="MAC Address Structure" width="600"/>
   <br/>
   <em>Figure 5: The structure of a MAC address, showing the manufacturer and unique device ID.</em>
 </p>
@@ -113,7 +113,7 @@ Some places like cafes use MAC addresses to control who gets on their WiFi (or c
 Think of it like shouting "Hello!" in a big room and waiting to hear the echo. Ping sends an "echo request" (the "Hello!") to another device. If that device is online, it sends back an "echo reply" (the echo). Ping measures how long it took for the echo to come back. This time is called the **latency**.
 
 <p align="center">
-  <img src="./assets/images/icmp-echo-diagram.png" alt="ICMP Echo Diagram" width="600"/>
+  <img src="./assets/images/icmp-echo-diagram.jpg" alt="ICMP Echo Diagram" width="600"/>
   <br/>
   <em>Figure 6: How Ping works: sending an Echo Request and receiving an Echo Reply.</em>
 </p>

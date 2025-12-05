@@ -15,7 +15,7 @@ We'll cover three main topologies here.
 The main idea of a star topology is that every device—whether it's a PC, a printer, or anything else—is individually connected to a central network device, like a switch or a hub. This is the most common topology found today because it's so reliable and easy to expand.
 
 <p align="center">
-  <img src="assets/images/star-topology-diagram.png" alt="Star Topology Diagram" width="600"/>
+  <img src="assets/images/star-topology-diagram.jpg" alt="Star Topology Diagram" width="600"/>
   <br/>
   <em>Figure 1: A diagram of a Star Topology network.</em>
 </p>
@@ -36,7 +36,7 @@ The main idea of a star topology is that every device—whether it's a PC, a pri
 A bus topology relies on a single main cable known as a "backbone." You can picture it like the main branch of a tree, where all the network devices are like leaves stemming from it.
 
 <p align="center">
-  <img src="assets/images/bus-topology-diagram.png" alt="Bus Topology Diagram" width="600"/>
+  <img src="assets/images/bus-topology-diagram.jpg" alt="Bus Topology Diagram" width="600"/>
   <br/>
   <em>Figure 2: A diagram of a Bus Topology network.</em>
 </p>
@@ -56,7 +56,7 @@ A bus topology relies on a single main cable known as a "backbone." You can pict
 In a ring topology, devices are connected directly to each other in a closed loop. This setup requires less cabling and doesn't depend on an expensive central device like a star topology does.
 
 <p align="center">
-  <img src="assets/images/ring-topology-diagram.png" alt="Ring Topology Diagram" width="600"/>
+  <img src="assets/images/ring-topology-diagram.jpg" alt="Ring Topology Diagram" width="600"/>
   <br/>
   <em>Figure 3: A diagram of a Ring Topology network.</em>
 </p>
@@ -82,7 +82,7 @@ Switches are much smarter and more efficient than older network devices like hub
 You can also connect switches and routers together. This is a clever way to make your network more reliable (we call this "redundancy"). By adding multiple paths for data to travel, if one path ever goes down, the data can simply take another route. This means your network won't have any downtime, even if it might take a tiny bit longer for packets to reach their destination sometimes.
 
 <p align="center">
-  <img src="assets/images/switch-diagram.png" alt="Switch Diagram" width="600"/>
+  <img src="assets/images/switch-diagram.jpg" alt="Switch Diagram" width="600"/>
   <br/>
   <em>Figure 4: A diagram illustrating a network switch connecting multiple devices.</em>
 </p>
@@ -96,7 +96,7 @@ Routers are the devices that connect different networks together and help data t
 Routing is the process where data finds its way from one network to another. It's like a GPS for your network traffic, figuring out the best path for your data to take so it can be delivered successfully. This is super useful when there are many possible paths or connections between different networks.
 
 <p align="center">
-  <img src="assets/images/router-diagram.png" alt="Router Diagram" width="600"/>
+  <img src="assets/images/router-diagram.jpg" alt="Router Diagram" width="600"/>
   <br/>
   <em>Figure 5: A diagram illustrating a router connecting two different networks.</em>
 </p>
@@ -127,7 +127,7 @@ Consider a small business office. You'd want to keep the company's internal netw
 By creating these separate subnets, the business ensures its critical data and systems are protected, even if the guest Wi-Fi gets compromised.
 
 <p align="center">
-  <img src="assets/images/subnet-diagram.png" alt="Subnet Diagram" width="600"/>
+  <img src="assets/images/subnet-diagram.jpg" alt="Subnet Diagram" width="600"/>
   <br/>
   <em>Figure 6: A diagram showing a router creating two separate subnets for different types of networks in a small business.</em>
 </p>
