@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Concepts & Protocols Quiz</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f7f9fc; color: #4a4a4a; }
+        h1 { color: #005A9C; }
+        .question { margin-bottom: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .question:hover { transform: translateY(-3px); }
+        .question p { font-weight: bold; font-size: 1.1em; }
+        label { display: block; margin-bottom: 10px; cursor: pointer; }
+        label input { margin-right: 10px; }
+        label strong { color: #005A9C; font-weight: bold; }
+        button { background-color: #4285F4; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; transition: background-color 0.2s; }
+        button:hover { background-color: #3367D6; }
+        #results { margin-top: 25px; font-size: 1.3em; font-weight: bold; color: #222; }
+    </style>
+</head>
+<body>
+
+    <h1>LAN Concepts & Protocols Quiz</h1>
+    <p>Test your knowledge on Topologies, Switches, Routers, Subnetting, ARP, and DHCP!</p>
+
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. What does "topology" refer to in networking?</p>
+            <label><input type="radio" name="q1" value="A"> <strong>A.</strong> The speed of the internet connection.</label>
+            <label><input type="radio" name="q1" value="B"> <strong>B.</strong> The physical layout or design of the network.</label>
+            <label><input type="radio" name="q1" value="C"> <strong>C.</strong> The type of cables used.</label>
+            <label><input type="radio" name="q1" value="D"> <strong>D.</strong> The operating system on the server.</label>
+        </div>
+
+        <div class="question">
+            <p>2. In a Star Topology, how are devices connected?</p>
+            <label><input type="radio" name="q2" value="A"> <strong>A.</strong> All devices are connected in a closed loop.</label>
+            <label><input type="radio" name="q2" value="B"> <strong>B.</strong> All devices connect to a single backbone cable.</label>
+            <label><input type="radio" name="q2" value="C"> <strong>C.</strong> Individually to a central device like a switch.</label>
+            <label><input type="radio" name="q2" value="D"> <strong>D.</strong> Wirelessly to a satellite.</label>
+        </div>
+
+        <div class="question">
+            <p>3. What is a major disadvantage of the Star Topology?</p>
+            <label><input type="radio" name="q3" value="A"> <strong>A.</strong> It is very difficult to add new devices.</label>
+            <label><input type="radio" name="q3" value="B"> <strong>B.</strong> It requires more cabling and a central device, making it expensive.</label>
+            <label><input type="radio" name="q3" value="C"> <strong>C.</strong> If one cable breaks, the whole network goes down.</label>
+            <label><input type="radio" name="q3" value="D"> <strong>D.</strong> It is the slowest topology.</label>
+        </div>
+
+        <div class="question">
+            <p>4. Which topology uses a single main cable known as a "backbone"?</p>
+            <label><input type="radio" name="q4" value="A"> <strong>A.</strong> Star Topology</label>
+            <label><input type="radio" name="q4" value="B"> <strong>B.</strong> Ring Topology</label>
+            <label><input type="radio" name="q4" value="C"> <strong>C.</strong> Mesh Topology</label>
+            <label><input type="radio" name="q4" value="D"> <strong>D.</strong> Bus Topology</label>
+        </div>
+
+        <div class="question">
+            <p>5. What happens in a Bus Topology if the main backbone cable breaks?</p>
+            <label><input type="radio" name="q5" value="A"> <strong>A.</strong> Only one computer loses connection.</label>
+            <label><input type="radio" name="q5" value="B"> <strong>B.</strong> The network switches to a backup wireless signal.</label>
+            <label><input type="radio" name="q5" value="C"> <strong>C.</strong> The entire network fails.</label>
+            <label><input type="radio" name="q5" value="D"> <strong>D.</strong> Data travels in the opposite direction.</label>
+        </div>
+
+        <div class="question">
+            <p>6. In a Ring Topology, when will a device forward data from another device?</p>
+            <label><input type="radio" name="q6" value="A"> <strong>A.</strong> Only if it has no data of its own to send.</label>
+            <label><input type="radio" name="q6" value="B"> <strong>B.</strong> Immediately, prioritizing it over its own data.</label>
+            <label><input type="radio" name="q6" value="C"> <strong>C.</strong> When the central hub commands it to.</label>
+            <label><input type="radio" name="q6" value="D"> <strong>D.</strong> Only during off-peak hours.</label>
+        </div>
+
+        <div class="question">
+            <p>7. Switches are often described as the network's:</p>
+            <label><input type="radio" name="q7" value="A"> <strong>A.</strong> Traffic cops.</label>
+            <label><input type="radio" name="q7" value="B"> <strong>B.</strong> Storage units.</label>
+            <label><input type="radio" name="q7" value="C"> <strong>C.</strong> Power generators.</label>
+            <label><input type="radio" name="q7" value="D"> <strong>D.</strong> Firewalls.</label>
+        </div>
+
+        <div class="question">
+            <p>8. How does a Switch differ from a Hub regarding data transmission?</p>
+            <label><input type="radio" name="q8" value="A"> <strong>A.</strong> A switch sends data to every port (broadcasting).</label>
+            <label><input type="radio" name="q8" value="B"> <strong>B.</strong> A switch sends data only to the specific device it is meant for.</label>
+            <label><input type="radio" name="q8" value="C"> <strong>C.</strong> A switch cannot connect multiple devices.</label>
+            <label><input type="radio" name="q8" value="D"> <strong>D.</strong> A switch is slower than a hub.</label>
+        </div>
+
+        <div class="question">
+            <p>9. What is "redundancy" in networking?</p>
+            <label><input type="radio" name="q9" value="A"> <strong>A.</strong> Using old cables to save money.</label>
+            <label><input type="radio" name="q9" value="B"> <strong>B.</strong> Removing unused devices from the network.</label>
+            <label><input type="radio" name="q9" value="C"> <strong>C.</strong> Adding multiple paths so the network stays up if one path fails.</label>
+            <label><input type="radio" name="q9" value="D"> <strong>D.</strong> Slowing down the network to prevent errors.</label>
+        </div>
+
+        <div class="question">
+            <p>10. What is the primary function of a Router?</p>
+            <label><input type="radio" name="q10" value="A"> <strong>A.</strong> To connect devices within a single LAN.</label>
+            <label><input type="radio" name="q10" value="B"> <strong>B.</strong> To protect against viruses.</label>
+            <label><input type="radio" name="q10" value="C"> <strong>C.</strong> To connect different networks and direct traffic between them.</label>
+            <label><input type="radio" name="q10" value="D"> <strong>D.</strong> To provide power to IP phones.</label>
+        </div>
+
+        <div class="question">
+            <p>11. What concept is compared to sorting a huge box of LEGO bricks into smaller bins?</p>
+            <label><input type="radio" name="q11" value="A"> <strong>A.</strong> Switching</label>
+            <label><input type="radio" name="q11" value="B"> <strong>B.</strong> Subnetting</label>
+            <label><input type="radio" name="q11" value="C"> <strong>C.</strong> Routing</label>
+            <label><input type="radio" name="q11" value="D"> <strong>D.</strong> Encryption</label>
+        </div>
+
+        <div class="question">
+            <p>12. What does a Subnet Mask do?</p>
+            <label><input type="radio" name="q12" value="A"> <strong>A.</strong> It hides the user's identity.</label>
+            <label><input type="radio" name="q12" value="B"> <strong>B.</strong> It encrypts the data being sent.</label>
+            <label><input type="radio" name="q12" value="C"> <strong>C.</strong> It distinguishes the network part of an IP from the device part.</label>
+            <label><input type="radio" name="q12" value="D"> <strong>D.</strong> It blocks unauthorized websites.</label>
+        </div>
+
+        <div class="question">
+            <p>13. In a subnet, what is the "Default Gateway"?</p>
+            <label><input type="radio" name="q13" value="A"> <strong>A.</strong> The address of the main server.</label>
+            <label><input type="radio" name="q13" value="B"> <strong>B.</strong> The unique ID of the computer.</label>
+            <label><input type="radio" name="q13" value="C"> <strong>C.</strong> The "exit" address (usually a router) to reach other networks.</label>
+            <label><input type="radio" name="q13" value="D"> <strong>D.</strong> The first IP address in the range.</label>
+        </div>
+
+        <div class="question">
+            <p>14. Why might a business use subnets for Employee and Guest networks?</p>
+            <label><input type="radio" name="q14" value="A"> <strong>A.</strong> To isolate sensitive data and improve security.</label>
+            <label><input type="radio" name="q14" value="B"> <strong>B.</strong> To make the internet slower for guests.</label>
+            <label><input type="radio" name="q14" value="C"> <strong>C.</strong> It is cheaper than having one network.</label>
+            <label><input type="radio" name="q14" value="D"> <strong>D.</strong> To use fewer cables.</label>
+        </div>
+
+        <div class="question">
+            <p>15. What is the main purpose of ARP (Address Resolution Protocol)?</p>
+            <label><input type="radio" name="q15" value="A"> <strong>A.</strong> To find the best route to the internet.</label>
+            <label><input type="radio" name="q15" value="B"> <strong>B.</strong> To match a logical IP address to a physical MAC address.</label>
+            <label><input type="radio" name="q15" value="C"> <strong>C.</strong> To assign IP addresses automatically.</label>
+            <label><input type="radio" name="q15" value="D"> <strong>D.</strong> To compress data files.</label>
+        </div>
+
+        <div class="question">
+            <p>16. How does an ARP Request find a MAC address?</p>
+            <label><input type="radio" name="q16" value="A"> <strong>A.</strong> It asks the router privately.</label>
+            <label><input type="radio" name="q16" value="B"> <strong>B.</strong> It looks it up on Google.</label>
+            <label><input type="radio" name="q16" value="C"> <strong>C.</strong> It "shouts" (broadcasts) to every device on the network.</label>
+            <label><input type="radio" name="q16" value="D"> <strong>D.</strong> It guesses the address based on the IP.</label>
+        </div>
+
+        <div class="question">
+            <p>17. What is the ARP Cache?</p>
+            <label><input type="radio" name="q17" value="A"> <strong>A.</strong> A temporary memory log of IP-to-MAC address pairs.</label>
+            <label><input type="radio" name="q17" value="B"> <strong>B.</strong> A trash folder for old emails.</label>
+            <label><input type="radio" name="q17" value="C"> <strong>C.</strong> The physical storage on a router.</label>
+            <label><input type="radio" name="q17" value="D"> <strong>D.</strong> A security feature that blocks ARP requests.</label>
+        </div>
+
+        <div class="question">
+            <p>18. What is the function of DHCP?</p>
+            <label><input type="radio" name="q18" value="A"> <strong>A.</strong> To encrypt passwords.</label>
+            <label><input type="radio" name="q18" value="B"> <strong>B.</strong> To automatically assign IP addresses to devices.</label>
+            <label><input type="radio" name="q18" value="C"> <strong>C.</strong> To monitor web traffic.</label>
+            <label><input type="radio" name="q18" value="D"> <strong>D.</strong> To convert analog signals to digital.</label>
+        </div>
+
+        <div class="question">
+            <p>19. What is the first step in the DHCP process?</p>
+            <label><input type="radio" name="q19" value="A"> <strong>A.</strong> DHCP Request</label>
+            <label><input type="radio" name="q19" value="B"> <strong>B.</strong> DHCP Offer</label>
+            <label><input type="radio" name="q19" value="C"> <strong>C.</strong> DHCP Ack</label>
+            <label><input type="radio" name="q19" value="D"> <strong>D.</strong> DHCP Discover</label>
+        </div>
+
+        <div class="question">
+            <p>20. What is the final message sent by the DHCP server to confirm the IP address assignment?</p>
+            <label><input type="radio" name="q20" value="A"> <strong>A.</strong> DHCP Hello</label>
+            <label><input type="radio" name="q20" value="B"> <strong>B.</strong> DHCP ACK (Acknowledgement)</label>
+            <label><input type="radio" name="q20" value="C"> <strong>C.</strong> DHCP Stop</label>
+            <label><input type="radio" name="q20" value="D"> <strong>D.</strong> DHCP Valid</label>
+        </div>
+
+        <button type="submit">Check My Answers</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const correctAnswers = {
+                q1: 'B',  // Topology definition
+                q2: 'C',  // Star connection
+                q3: 'B',  // Star disadvantage (Cost)
+                q4: 'D',  // Bus Backbone
+                q5: 'C',  // Bus failure
+                q6: 'A',  // Ring forwarding rule
+                q7: 'A',  // Switch alias (Traffic Cops)
+                q8: 'B',  // Switch vs Hub
+                q9: 'C',  // Redundancy
+                q10: 'C', // Router function
+                q11: 'B', // Lego analogy (Subnetting)
+                q12: 'C', // Subnet mask function
+                q13: 'C', // Default Gateway
+                q14: 'A', // Subnet Security
+                q15: 'B', // ARP definition
+                q16: 'C', // ARP Broadcast
+                q17: 'A', // ARP Cache
+                q18: 'B', // DHCP definition
+                q19: 'D', // DHCP Discover
+                q20: 'B'  // DHCP ACK
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const form = event.target;
+            let resultsHTML = '';
+
+            for (const question in correctAnswers) {
+                const userAnswer = form.elements[question].value;
+                if (userAnswer === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.textContent = `You scored ${score} out of ${totalQuestions}!`;
+            
+            // Optional: Scroll to results
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
