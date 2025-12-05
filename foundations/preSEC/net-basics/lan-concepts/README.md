@@ -131,3 +131,24 @@ By creating these separate subnets, the business ensures its critical data and s
   <br/>
   <em>Figure 6: A diagram showing a router creating two separate subnets for different types of networks in a small business.</em>
 </p>
+
+---
+
+## 5. ARP (Address Resolution Protocol)
+
+Think of the ARP protocol as the network's phonebook. Its main job is to match a logical IP address (like a person's name) to a physical MAC address (like a fingerprint). Because devices on a local network need the physical MAC address to deliver data directly, ARP is the technology that bridges this gap.
+
+Every device keeps a small log, called an **ARP cache**, to remember which IP address belongs to which MAC address. This saves it from having to ask the same question over and over.
+
+The process works using two simple message types:
+
+*   **ARP Request:** When your computer needs to find the MAC address for a known IP address, it shouts a message to every device on the network, asking, "Who has this IP address?"
+*   **ARP Reply:** All devices hear the request, but only the one with that specific IP address sends a message back, saying, "I have that IP! Here is my MAC address."
+
+Once your computer receives the ARP reply, it stores the IP and MAC address pair in its ARP cache. Now it can send data directly to the other device without having to ask again—at least until the entry in its cache expires.
+
+<p align="center">
+  <img src="assets/images/arp-protocol-diagram.jpg" alt="ARP Protocol Diagram" width="600"/>
+  <br/>
+  <em>Figure 7: A diagram illustrating the ARP Request and ARP Reply process.</em>
+</p>
