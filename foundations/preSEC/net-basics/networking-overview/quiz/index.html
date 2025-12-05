@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking Basics Quiz</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f7f9fc; color: #4a4a4a; }
+        h1 { color: #005A9C; }
+        .question { margin-bottom: 20px; background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .question p { font-weight: bold; }
+        label { display: block; margin-bottom: 8px; }
+        button { background-color: #4285F4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #3367D6; }
+        #results { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Networking Basics Quiz</h1>
+    <p>Test your knowledge based on the Networking Overview document!</p>
+
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. What is the permanent, factory-assigned address of a network device called?</p>
+            <label><input type="radio" name="q1" value="a"> a) IP Address</label>
+            <label><input type="radio" name="q1" value="b"> b) MAC Address</label>
+            <label><input type="radio" name="q1" value="c"> c) Home Address</label>
+        </div>
+
+        <div class="question">
+            <p>2. Which protocol does the "ping" command use to test connectivity?</p>
+            <label><input type="radio" name="q2" value="a"> a) HTTP</label>
+            <label><input type="radio" name="q2" value="b"> b) TCP</label>
+            <label><input type="radio" name="q2" value="c"> c) ICMP</label>
+        </div>
+
+        <div class="question">
+            <p>3. What is the main problem with the IPv4 addressing system?</p>
+            <label><input type="radio" name="q3" value="a"> a) It's too slow.</label>
+            <label><input type="radio" name="q3" value="b"> b) It's running out of available addresses.</label>
+            <label><input type="radio" name="q3" value="c"> c) It's not secure.</label>
+        </div>
+
+        <div class="question">
+            <p>4. Your home network is an example of a:</p>
+            <label><input type="radio" name="q4" value="a"> a) Public Network</label>
+            <label><input type="radio" name="q4" value="b"> b) Private Network</label>
+            <label><input type="radio" name="q4" value="c"> c) Global Network</label>
+        </div>
+
+        <div class="question">
+            <p>5. What is the process of faking a MAC address called?</p>
+            <label><input type="radio" name="q5" value="a"> a) Hacking</label>
+            <label><input type="radio" name="q5" value="b"> b) Spoofing</label>
+            <label><input type="radio" name="q5" value="c"> c) Routing</label>
+        </div>
+
+        <button type="submit">Check My Answers</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'c',
+                q3: 'b',
+                q4: 'b',
+                q5: 'b'
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const form = event.target;
+
+            for (const question in correctAnswers) {
+                const userAnswer = form.elements[question].value;
+                if (userAnswer === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.textContent = `You scored ${score} out of ${totalQuestions}!`;
+        });
+    </script>
+
+</body>
+</html>
