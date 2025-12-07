@@ -106,8 +106,6 @@ The downside? All this checking and confirming takes extra time, making TCP a bi
   <em>Figure 5: TCP ensures a complete and correct 'pizza' order is delivered, just like a reliable delivery service.</em>
 </p>
 
----
-
 ### UDP: The Fast Food Truck
 
 Now, let's talk about **UDP (User Datagram Protocol)**. If TCP is a reliable delivery service, think of UDP as a food truck at a music festival, tossing out pizza slices to the crowd. It’s all about SPEED.
