@@ -1,13 +1,13 @@
 # Web Basics
 
-> This section will cover the fundamental concepts of how the web works, from your browser requests to server responses. Think of it as peeking behind the curtain of every website you visit!
+> This section covers the fundamental concepts of how the web works, from your browser requests to server responses. Think of it as peeking behind the curtain of every website you visit!
 
 ---
 
-### 🕸️ Topics (Coming Soon!)
+### Key Concepts
 
-*   **HTTP/HTTPS**: The secret language browsers and servers use to chat.
-*   **HTML/CSS/JavaScript**: The building blocks that make websites look and feel the way they do.
-*   **Web Servers**: The computers that store websites and send them to you when you ask.
+*   **[DNS](./dns/)**: The phonebook of the internet that translates human-friendly names into IP addresses.
+*   **[HTTP/HTTPS](./http-https/)**: The protocol used for communication between web browsers and servers.
+*   **[Web Architecture](./web-architecture/)**: Understanding how the frontend and backend work together.
 
 ---
