@@ -4,7 +4,7 @@
 
 ---
 
-### 📚 Core Areas
+###  Core Areas
 
 *   **[Pre-Security](./preSEC/)**: Get ready for the basics you need before diving into specific hacking topics.
 

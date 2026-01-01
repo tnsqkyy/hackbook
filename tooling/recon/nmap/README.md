@@ -6,7 +6,7 @@ This guide is a simple workflow for using Nmap like a pro.
 
 ---
 
-## 📌 What's it for?
+##  What's it for?
 
 You can use Nmap to:
 
@@ -100,7 +100,7 @@ nmap --script=http-headers -p 80 192.168.1.5
 
 ---
 
-## 📚 Things to Remember
+##  Things to Remember
 
 *   **Scan Types:** By default, Nmap uses `-sS` (SYN Scan), which is sneaky because it doesn't complete the full connection. If you're an admin on the machine, you might need to use `-sT` for a full connect scan.
 *   **Speed:** Control your scan speed with `-T`. `-T4` is fast and common. `-T2` (Polite) or `-T1` (Sneaky) are good for avoiding firewalls or security systems (IDS).
@@ -109,7 +109,7 @@ nmap --script=http-headers -p 80 192.168.1.5
 
 ---
 
-## 🚀 The Workflow
+##  The Workflow
 
 The real power of Nmap is putting it all together:
 

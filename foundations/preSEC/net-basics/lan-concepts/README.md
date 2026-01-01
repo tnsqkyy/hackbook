@@ -12,7 +12,7 @@ We'll cover three main topologies here.
 
 ### 1.1. Star Topology
 
-The main idea of a star topology is that every device—whether it's a PC, a printer, or anything else—is individually connected to a central network device, like a switch or a hub. This is the most common topology found today because it's so reliable and easy to expand.
+The main idea of a star topology is that every devicewhether it's a PC, a printer, or anything elseis individually connected to a central network device, like a switch or a hub. This is the most common topology found today because it's so reliable and easy to expand.
 
 <p align="center">
   <img src="assets/images/star-topology-diagram.jpg" alt="Star Topology Diagram" width="600"/>
@@ -26,7 +26,7 @@ The main idea of a star topology is that every device—whether it's a PC, a pri
 
 *   **Disadvantages:**
     *   **Expensive:** Because every device needs its own cable and you have to buy a dedicated central device (like a switch), the cost is higher than other topologies.
-    *   **Single Point of Failure:** Although it's rare because central devices are often built to be robust, if that central hub fails—the entire network goes down.
+    *   **Single Point of Failure:** Although it's rare because central devices are often built to be robust, if that central hub failsthe entire network goes down.
     *   **Maintenance & Troubleshooting:** The bigger the network gets, the more complex it is to maintain. Finding faults can also become much harder.
 
 ---
@@ -45,7 +45,7 @@ A bus topology relies on a single main cable known as a "backbone." You can pict
     *   **Cheap & Easy to Set Up:** This is one of the cheapest and easiest topologies to install because you just need one main cable and don't need a lot of expensive networking gear.
 
 *   **Disadvantages:**
-    *   **Easily Bottlenecked:** All data travels on the same cable. If many devices try to send data at once, the network gets slow and congested—like a traffic jam.
+    *   **Easily Bottlenecked:** All data travels on the same cable. If many devices try to send data at once, the network gets slow and congestedlike a traffic jam.
     *   **Hard to Troubleshoot:** With all the data running along the same path, it's very difficult to pinpoint which device is causing problems when an issue occurs.
     *   **No Redundancy:** If that main "backbone" cable breaks anywhere, the entire network fails.
 
@@ -69,13 +69,13 @@ In a ring topology, devices are connected directly to each other in a closed loo
 
 *   **Disadvantages:**
     *   **Inefficient Data Travel:** Data might have to hop through many other devices before it gets where it needs to go, which isn't very efficient.
-    *   **Entire Network Can Fail:** This is a double-edged sword. A single fault—like a cut cable or a broken device—breaks the loop and brings the entire network down.
+    *   **Entire Network Can Fail:** This is a double-edged sword. A single faultlike a cut cable or a broken devicebreaks the loop and brings the entire network down.
 
 ---
 
 ## 2. Switches
 
-Switches are like the traffic cops of a network. They are special devices designed to connect many other devices, such as computers, using Ethernet cables. You'll usually find switches in bigger networks because they're great at connecting a lot of different devices. They come with many "ports" where devices can plug in—you might see switches with 4, 8, 16, 24, 32, or even 64 ports!
+Switches are like the traffic cops of a network. They are special devices designed to connect many other devices, such as computers, using Ethernet cables. You'll usually find switches in bigger networks because they're great at connecting a lot of different devices. They come with many "ports" where devices can plug inyou might see switches with 4, 8, 16, 24, 32, or even 64 ports!
 
 Switches are much smarter and more efficient than older network devices like hubs or repeaters. A switch keeps a record of exactly which device is connected to which port. So, when a switch gets a piece of data (called a "packet"), instead of sending it to **every single** port like a hub would, it sends that packet directly and only to the device it's meant for. This drastically cuts down on unnecessary network traffic and makes the network run much smoother and faster!
 
@@ -91,7 +91,7 @@ You can also connect switches and routers together. This is a clever way to make
 
 ## 3. Routers
 
-Routers are the devices that connect different networks together and help data travel between them. Think of a router as a traffic controller for data, directing information to its correct destination across various networks. Its main job is called "routing"—which is where the name "router" comes from!
+Routers are the devices that connect different networks together and help data travel between them. Think of a router as a traffic controller for data, directing information to its correct destination across various networks. Its main job is called "routing"which is where the name "router" comes from!
 
 Routing is the process where data finds its way from one network to another. It's like a GPS for your network traffic, figuring out the best path for your data to take so it can be delivered successfully. This is super useful when there are many possible paths or connections between different networks.
 
@@ -113,7 +113,7 @@ In any subnet, IP addresses are used in three key ways:
 
 *   **Network Address:** This is like the "street name" for your sub-network. It identifies the network itself but isn't assigned to any single device. For example, a device with the IP address `192.168.1.10` is on the network `192.168.1.0`.
 *   **Host Address:** This is the "house number" for a specific device on that street. Each device (like your laptop or phone) gets a unique host address so data can find it. For example, `192.168.1.10` could be your laptop.
-*   **Default Gateway:** This is the "exit" off your street. It’s a special address given to a device (usually a router) that knows how to send information to *other* networks. If your laptop wants to talk to a website on the internet, it sends the data to the default gateway first.
+*   **Default Gateway:** This is the "exit" off your street. Its a special address given to a device (usually a router) that knows how to send information to *other* networks. If your laptop wants to talk to a website on the internet, it sends the data to the default gateway first.
 
 Subnetting is great for efficiency and security. It lets you create separate zones within your network while still allowing them to connect to the wider internet.
 
@@ -145,7 +145,7 @@ The process works using two simple message types:
 *   **ARP Request:** When your computer needs to find the MAC address for a known IP address, it shouts a message to every device on the network, asking, "Who has this IP address?"
 *   **ARP Reply:** All devices hear the request, but only the one with that specific IP address sends a message back, saying, "I have that IP! Here is my MAC address."
 
-Once your computer receives the ARP reply, it stores the IP and MAC address pair in its ARP cache. Now it can send data directly to the other device without having to ask again—at least until the entry in its cache expires.
+Once your computer receives the ARP reply, it stores the IP and MAC address pair in its ARP cache. Now it can send data directly to the other device without having to ask againat least until the entry in its cache expires.
 
 <p align="center">
   <img src="assets/images/arp-protocol-diagram.jpg" alt="ARP Protocol Diagram" width="600"/>
@@ -176,8 +176,8 @@ After this handshake, the device has its own unique IP address and can start com
 
 ---
 
-## 🎓 Test Your Knowledge
+##  Test Your Knowledge
 
 Ready to check your understanding? Try this short quiz.
 
-→ **[Start the LAN concepts Quiz](https://tnsqkyy.github.io/hackbook/foundations/preSEC/net-basics/lan-concepts/quiz/index.html)**
+ **[Start the LAN concepts Quiz](https://tnsqkyy.github.io/hackbook/foundations/preSEC/net-basics/lan-concepts/quiz/index.html)**

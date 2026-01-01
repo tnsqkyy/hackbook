@@ -6,7 +6,7 @@ This guide shows you how to use ExifTool to find hidden clues in a file.
 
 ---
 
-## 📌 What's it for?
+##  What's it for?
 
 ExifTool can help you:
 
@@ -68,7 +68,7 @@ You can use flags to ask ExifTool specific questions.
 
 ---
 
-## 📚 Things to Remember
+##  Things to Remember
 
 *   **Not every file has metadata:** Many sites like Twitter and Facebook remove this hidden info when you upload pictures. Sometimes, the fact that there's **no** metadata is a clue itself.
 *   **You can also remove metadata:** ExifTool can be used to wipe a file clean. To remove all metadata, you can run this command:

@@ -1,6 +1,6 @@
-# hackBook
+# hackbook
 
-**hackBook** is my personal notebook for learning ethical hacking.  
+**hackbook** is my personal notebook for learning ethical hacking.  
 It's where I keep notes on everything I learn: the ideas, the tests, the mistakes, and the 'aha!' moments - not just the commands.
 
 ---
@@ -10,7 +10,7 @@ It's where I keep notes on everything I learn: the ideas, the tests, the mistake
 ### Foundations
 The absolute basics of cybersecurity, covering how computers and networks actually work.
 
-→ **[Go to /foundations](./foundations/)**
+ **[Go to /foundations](./foundations/)**
 
 ### Tooling
 A hand-picked list of important hacking tools. For each tool, I explain:
@@ -20,17 +20,17 @@ A hand-picked list of important hacking tools. For each tool, I explain:
 - How real attackers use it
 - Practical examples
 
-→ **[Go to /tooling](./tooling/)**
+ **[Go to /tooling](./tooling/)**
 
 ### Labs & Write-ups
 My notes and solutions from cybersecurity training sites like TryHackMe and my own practice labs.
 
-→ **[Go to /labs](./labs/)**
+ **[Go to /labs](./labs/)**
 
 ### Malware
 I rebuild simple malware here for learning purposes, to understand how it works from the inside.
 
-→ **[Go to /malware](./malware/)**
+ **[Go to /malware](./malware/)**
 
 ---
 

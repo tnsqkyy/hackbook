@@ -4,7 +4,7 @@ This section is all about **reconnaissance** (recon for short). It's the first a
 
 ---
 
-## 📡 What This Section Covers
+##  What This Section Covers
 
 -   Finding live computers on the network
 -   Different ways to scan for open ports (TCP/UDP)
@@ -15,19 +15,19 @@ This section is all about **reconnaissance** (recon for short). It's the first a
 
 ---
 
-## 🔧 Tools Included
+##  Tools Included
 
 Each tool has its own README with a detailed guide.
 
 ### **Nmap (Network Mapper)**
 The number one tool for exploring networks and checking their security.
-→ **[Go to /nmap](./nmap/)**
+ **[Go to /nmap](./nmap/)**
 
 (Other tools like **masscan** and **smbmap** will be added later.)
 
 ---
 
-## 🧠 My Goal
+##  My Goal
 
 Good recon isn't about making a lot of noise. It's about being smart and quiet. The process looks like this:
 
@@ -40,6 +40,6 @@ Every guide here focuses on **why** we choose a certain scan, not just the comma
 
 ---
 
-→ **[Go to /nmap](./nmap/)**
+ **[Go to /nmap](./nmap/)**
 
 More tools and tricks will be added as this section grows.

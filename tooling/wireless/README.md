@@ -6,7 +6,7 @@ The goal is to understand what's happening with the raw data, not just to memori
 
 ---
 
-## 📡 What This Section Covers
+##  What This Section Covers
 
 -   The different types of WiFi data (frames)
 -   How to put your WiFi card in "monitor mode"
@@ -18,19 +18,19 @@ The goal is to understand what's happening with the raw data, not just to memori
 
 ---
 
-## 🔧 Tools Included
+##  Tools Included
 
 Each tool has its own README file.
 
 ### **Aircrack-NG Suite**
 The original WiFi hacking toolkit for capturing, attacking, and cracking.
-→ **[Go to /aircrack-ng](./aircrack-ng/)**
+ **[Go to /aircrack-ng](./aircrack-ng/)**
 
 (Other tools like **hcxdumptool** and **wifite** will be added later.)
 
 ---
 
-## 🧠 My Goal
+##  My Goal
 
 Hacking WiFi is really about understanding:
 
@@ -43,6 +43,6 @@ Every guide here focuses on **why the attack works**, not just the commands.
 
 ---
 
-→ **[Go to /aircrack-ng](./aircrack-ng/)**
+ **[Go to /aircrack-ng](./aircrack-ng/)**
 
 More tools will be added as I learn them.

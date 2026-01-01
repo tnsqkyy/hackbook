@@ -6,7 +6,7 @@ This guide shows you how to use Wireshark to look through a captured file (`.pca
 
 ---
 
-## 📌 What's it for?
+##  What's it for?
 
 In this guide, we'll use Wireshark to:
 
@@ -97,7 +97,7 @@ This pops up a new window with the entire conversation laid out like a script. I
 
 ---
 
-## 📚 Key Things to Remember
+##  Key Things to Remember
 
 *   **Capture vs. Display Filters:** A **capture filter** (like in `tcpdump`) throws away packets as they come in. A **display filter** (in Wireshark) just hides packets, so you can always change your filter and see everything again.
 *   **Encryption is the Enemy:** If you see `TLS` (for HTTPS), the conversation is encrypted. You **cannot** read the data inside unless you have the server's secret key.
@@ -105,7 +105,7 @@ This pops up a new window with the entire conversation laid out like a script. I
 
 ---
 
-## 🚀 Next Tutorials
+##  Next Tutorials
 
 *   **TShark:** The command-line version of Wireshark, great for scripts.
 *   **Advanced Filtering:** Using `and`, `or`, and `not` to build complex filters.

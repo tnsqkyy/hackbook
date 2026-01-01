@@ -1,16 +1,16 @@
 # The OSI Model
 
-> This section breaks down the OSI model—a core concept that explains how different network devices can talk to each other.
+> This section breaks down the OSI modela core concept that explains how different network devices can talk to each other.
 
 ---
 
 ## What is the OSI Model?
 
-The **OSI (Open Systems Interconnection) model** is a rulebook for how computers communicate. Think of it as a universal language for network devices. It doesn't matter if you have a Mac, a Windows PC, or a smart fridge—as long as they follow the OSI rules, they can understand each other. This ensures a message sent from one device can be correctly interpreted by another, even if they are made by different companies.
+The **OSI (Open Systems Interconnection) model** is a rulebook for how computers communicate. Think of it as a universal language for network devices. It doesn't matter if you have a Mac, a Windows PC, or a smart fridgeas long as they follow the OSI rules, they can understand each other. This ensures a message sent from one device can be correctly interpreted by another, even if they are made by different companies.
 
 ### The Seven Layers
 
-The OSI model is organized into seven layers, stacked on top of one another. We number these layers from top to bottom—starting with Layer 7 and going all the way down to Layer 1.
+The OSI model is organized into seven layers, stacked on top of one another. We number these layers from top to bottomstarting with Layer 7 and going all the way down to Layer 1.
 
 Each layer has its own specific job. When you send data, it travels down through these layers and gets wrapped in extra information at each step. This process is called **encapsulation**, and we'll explore it more later. When another device receives your data, it reverses the process, unwrapping the data as it travels back up the layers.
 
@@ -22,18 +22,18 @@ Each layer has its own specific job. When you send data, it travels down through
 
 ---
 
-## 1. Layer 7 — Application
+## 1. Layer 7  Application
 
 This is the layer you probably interact with the most, often without even realizing it! The **Application Layer** acts as the user's direct interface to the network. It's what connects you to all the amazing services and data available online.
 
 These applications work at Layer 7 and provide the familiar graphical interfaces (GUIs) that you use daily. Some common examples, along with the protocols they often use, include:
 
-*   **Web browsers** (**HTTP/HTTPS**) — for browsing websites
-*   **Email clients** (**SMTP, IMAP, POP3**) — for sending and receiving emails
-*   **File transfer apps** (**FTP, SFTP**) — for uploading/downloading files (like FileZilla)
+*   **Web browsers** (**HTTP/HTTPS**)  for browsing websites
+*   **Email clients** (**SMTP, IMAP, POP3**)  for sending and receiving emails
+*   **File transfer apps** (**FTP, SFTP**)  for uploading/downloading files (like FileZilla)
 *   Messaging apps, streaming services, and online games also operate at this layer, each with their own set of rules to communicate effectively.
 
-This layer also defines important rules (**protocols**) that applications use to communicate. A great example is **DNS (Domain Name System)**. DNS is like the internet's phonebook—it translates easy-to-remember website names (like `google.com`) into the numerical **IP addresses** that computers actually use (e.g., `172.217.160.142`). Without DNS, you'd have to type long numbers to visit your favorite sites!
+This layer also defines important rules (**protocols**) that applications use to communicate. A great example is **DNS (Domain Name System)**. DNS is like the internet's phonebookit translates easy-to-remember website names (like `google.com`) into the numerical **IP addresses** that computers actually use (e.g., `172.217.160.142`). Without DNS, you'd have to type long numbers to visit your favorite sites!
 
 <p align="center">
   <img src="./assets/images/application-layer-youtube-browser.jpg" alt="Application Layer YouTube" width="600"/>
@@ -43,11 +43,11 @@ This layer also defines important rules (**protocols**) that applications use to
 
 ---
 
-## 2. Layer 6 — Presentation
+## 2. Layer 6  Presentation
 
 The **Presentation Layer** (Layer 6) is where the magic of data standardization happens in the OSI model. Think of it as the universal translator and formatter for your data.
 
-Imagine you're trying to read a document that's in a file format your computer doesn't understand—you'd need a special program to convert it, right? That's exactly what the Presentation Layer does for network communication! It makes sure that data sent from one application (like an email client) is transformed into a format that the receiving application can actually understand and display, even if they are completely different programs.
+Imagine you're trying to read a document that's in a file format your computer doesn't understandyou'd need a special program to convert it, right? That's exactly what the Presentation Layer does for network communication! It makes sure that data sent from one application (like an email client) is transformed into a format that the receiving application can actually understand and display, even if they are completely different programs.
 
 This layer sits between the **Application Layer** (Layer 7), where your apps live, and the rest of the network. Its main job is to ensure that different systems can "speak the same language" when it comes to how data looks. For example, it handles things like:
 
@@ -65,11 +65,11 @@ So, whether you're sending an email, browsing a secure website, or opening a pic
 
 ---
 
-## 3. Layer 5 — Session
+## 3. Layer 5  Session
 
 The **Session Layer** (Layer 5) is the network's conversation manager. Once your data has been properly formatted and encrypted by the Presentation Layer, this layer steps in to open up a direct line of communication with the computer on the other end.
 
-Its main job is to create, manage, and tear down a **session**—which is just a dedicated, private conversation between two devices. Before any data starts flowing, the Session Layer makes sure both computers are ready and synchronized.
+Its main job is to create, manage, and tear down a **session**which is just a dedicated, private conversation between two devices. Before any data starts flowing, the Session Layer makes sure both computers are ready and synchronized.
 
 One of its most important jobs is to make data transfers more reliable. It does this by breaking large amounts of data into smaller chunks. But here's the cool part: it sets **checkpoints** as it sends these chunks.
 
@@ -83,22 +83,22 @@ Think of it like saving your progress in a video game. If your internet connecti
 
 ---
 
-## 4. Layer 4 — Transport
+## 4. Layer 4  Transport
 
 We now arrive at the **Transport Layer** (Layer 4), the heart of data delivery. This layer is all about getting data from point A to point B. It uses two main "delivery services" to do this: **TCP** and **UDP**. The one it chooses depends entirely on the job at hand.
 
 ### TCP: The Reliable Home Delivery
 
-Think of **TCP (Transmission Control Protocol)** as your go-to pizza delivery service. It’s all about reliability and making sure you get exactly what you ordered.
+Think of **TCP (Transmission Control Protocol)** as your go-to pizza delivery service. Its all about reliability and making sure you get exactly what you ordered.
 
-When you order a pizza, the restaurant first confirms your order. TCP does the same thing by establishing a solid, dedicated connection between two devices before sending any data. It then breaks your data into numbered packets, sends them off, and—this is the important part—it checks to make sure every single packet arrives in the right order. If a packet gets lost along the way, TCP says, "Hey, I'm missing packet #3!" and has it sent again.
+When you order a pizza, the restaurant first confirms your order. TCP does the same thing by establishing a solid, dedicated connection between two devices before sending any data. It then breaks your data into numbered packets, sends them off, andthis is the important partit checks to make sure every single packet arrives in the right order. If a packet gets lost along the way, TCP says, "Hey, I'm missing packet #3!" and has it sent again.
 
 This makes TCP perfect for things where accuracy is critical, like:
 *   **Web browsing:** You need the whole webpage to load correctly.
 *   **Email:** You can't have missing sentences in your emails.
 *   **File downloads:** A corrupted file is a useless file.
 
-The downside? All this checking and confirming takes extra time, making TCP a bit slower. But for a perfect, complete delivery, it’s the only way to go.
+The downside? All this checking and confirming takes extra time, making TCP a bit slower. But for a perfect, complete delivery, its the only way to go.
 
 <p align="center">
   <img src="./assets/images/tcp-pizza-delivery.jpg" alt="TCP Reliable Pizza Delivery Diagram" width="600"/>
@@ -108,9 +108,9 @@ The downside? All this checking and confirming takes extra time, making TCP a bi
 
 ### UDP: The Fast Food Truck
 
-Now, let's talk about **UDP (User Datagram Protocol)**. If TCP is a reliable delivery service, think of UDP as a food truck at a music festival, tossing out pizza slices to the crowd. It’s all about SPEED.
+Now, let's talk about **UDP (User Datagram Protocol)**. If TCP is a reliable delivery service, think of UDP as a food truck at a music festival, tossing out pizza slices to the crowd. Its all about SPEED.
 
-UDP doesn't bother with establishing a connection or checking if the data arrived. It just sends the packets out as fast as possible. Some packets might get there, and some might get lost in the crowd—and that's okay!
+UDP doesn't bother with establishing a connection or checking if the data arrived. It just sends the packets out as fast as possible. Some packets might get there, and some might get lost in the crowdand that's okay!
 
 This "best-effort" approach is great for real-time applications where a tiny bit of data loss is better than a long delay. For example:
 *   **Live video streaming:** A few pixelated frames for a second is better than the whole video stopping to buffer.
@@ -122,12 +122,12 @@ UDP is faster and more efficient because it skips all the error-checking, but it
 <p align="center">
   <img src="./assets/images/udp-pizza-slices.jpg" alt="UDP Fast Pizza Slice Delivery Diagram" width="600"/>
   <br/>
-  <em>Figure 6: UDP is like a fast food truck—it's all about speed, even if a 'slice' (packet) gets dropped.</em>
+  <em>Figure 6: UDP is like a fast food truckit's all about speed, even if a 'slice' (packet) gets dropped.</em>
 </p>
 
 ---
 
-## 5. Layer 3 — Network
+## 5. Layer 3  Network
 
 Next is the **Network Layer** (Layer 3), where the magic of routing and reassembly happens. This layer is like the GPS of your data, figuring out the best route for information to travel across different networks to its final destination.
 
@@ -153,7 +153,7 @@ This layer relies heavily on **IP addresses** (like `192.168.1.100`) to identify
 
 ---
 
-## 6. Layer 2 — Data Link
+## 6. Layer 2  Data Link
 
 Descending further, we reach the **Data Link Layer** (Layer 2), the unsung hero that bridges the gap between the logical world of IP addresses and the physical reality of cables and Wi-Fi signals. This layer ensures that data can hop safely from one device to the very next device on the **same local network**.
 
@@ -161,7 +161,7 @@ Descending further, we reach the **Data Link Layer** (Layer 2), the unsung hero 
 
 Imagine you live in an apartment building. Your Network Layer (Layer 3) knows the building's street address (IP address). But to deliver mail to *your specific apartment*, the postal worker needs your apartment number. That's what a **MAC address (Media Access Control address)** is to your device on a local network!
 
-Every network interface card (NIC) — the hardware that lets your computer connect to a network — has a unique, permanent MAC address "burned" into it from the factory (e.g., `AA:BB:CC:DD:EE:FF`). This is your device's unique physical identifier, like a serial number.
+Every network interface card (NIC)  the hardware that lets your computer connect to a network  has a unique, permanent MAC address "burned" into it from the factory (e.g., `AA:BB:CC:DD:EE:FF`). This is your device's unique physical identifier, like a serial number.
 
 When data packets come down from the Network Layer, the Data Link Layer does two key things:
 
@@ -178,7 +178,7 @@ So, for communication within a local network (like your home Wi-Fi), devices tal
 
 ---
 
-## 7. Layer 1 — Physical
+## 7. Layer 1  Physical
 
 Finally, we reach the **Physical Layer** (Layer 1), the absolute foundation of all network communication. This is where the digital world meets the physical world, dealing with all the tangible components you can literally touch.
 
@@ -204,8 +204,8 @@ Without a working Physical Layer, none of the fancy stuff in the layers above ca
 
 ---
 
-## 🎓 Test Your Knowledge
+##  Test Your Knowledge
 
 Ready to check your understanding of the OSI Model? Try this short quiz.
 
-→ **[Start the OSI Model Quiz](https://tnsqkyy.github.io/hackbook/foundations/preSEC/net-basics/osi-model/quiz/index.html)**
+ **[Start the OSI Model Quiz](https://tnsqkyy.github.io/hackbook/foundations/preSEC/net-basics/osi-model/quiz/index.html)**

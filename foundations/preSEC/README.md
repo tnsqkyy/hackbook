@@ -4,7 +4,7 @@
 
 ---
 
-### 🚀 What We'll Cover
+###  What We'll Cover
 
 *   **[Network Basics](./net-basics/)**: Understand how devices talk to each other, from your home network to the entire internet.
 *   **[Web Basics](./web-basics/)**: Learn how websites work, from your browser to the server.

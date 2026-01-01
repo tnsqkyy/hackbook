@@ -2,57 +2,57 @@
 
 The **tooling** section is all about the tools of the trade. For every tool, I focus on **why** it's important, how it works, and how it's used in a real hacking scenario.
 
-Hacking is not about memorizing commands. It’s about understanding the tools and the logic behind them.
+Hacking is not about memorizing commands. Its about understanding the tools and the logic behind them.
 
 ---
 
-## 🔍 Categories
+##  Categories
 
 Tools are sorted by what they do, to keep things organized as this project grows.
 
 ### **1. Reconnaissance & Scanning**
 Finding computers, services, and open ports on a network.
-→ **[Go to /recon](./recon/)**
+ **[Go to /recon](./recon/)**
 
 ---
 
 ### **2. Traffic Analysis & Sniffing**
 Grabbing and looking at the data that moves across a network.
-→ **[Go to /sniffing](./sniffing/)**
+ **[Go to /sniffing](./sniffing/)**
 
 ---
 
 ### **3. Wireless Attacks**
 Hacking WiFi networks.
-→ **[Go to /wireless](./wireless/)**
+ **[Go to /wireless](./wireless/)**
 
 ---
 
 ### **4. Password Cracking & Hash Attacks**
 Guessing passwords and cracking password hashes.
-→ **[Go to /password-cracking](./password-cracking/)**
+ **[Go to /password-cracking](./password-cracking/)**
 
 ---
 
 ### **5. Exploitation Frameworks**
 Toolkits that make hacking easier and more automatic.
-→ **[Go to /exploitation](./exploitation/)**
+ **[Go to /exploitation](./exploitation/)**
 
 ---
 
 ### **6. Post-Exploitation & Privilege Escalation**
 What to do after you get in: keep access, get more power, and move around.
-→ **[Go to /post-exploitation](./post-exploitation/)**
+ **[Go to /post-exploitation](./post-exploitation/)**
 
 ---
 
 ### **7. Utilities & System Essentials**
 Helpful little tools that make a hacker's job easier.
-→ **[Go to /utilities](./utilities/)**
+ **[Go to /utilities](./utilities/)**
 
 ---
 
-## 🧠 My Goal
+##  My Goal
 
 My goal for each tool is to explain:
 
@@ -66,7 +66,7 @@ This section is about understanding, not memorizing.
 
 ---
 
-## 📈 What's Next
+##  What's Next
 
 Later, I'll connect these tools to:
 

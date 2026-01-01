@@ -6,7 +6,7 @@ This room is a great introduction to Open-Source Intelligence (OSINT). It shows 
 
 ---
 
-## 🚀 The Mission & How I Solved It
+##  The Mission & How I Solved It
 
 Our mission starts with a single image: `WindowsXP.jpg`, which you can find in the [`./task-files/`](./task-files/) folder. Let's find the answers to the room's questions.
 

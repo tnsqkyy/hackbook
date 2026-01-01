@@ -6,17 +6,17 @@ It's all about putting theory into practice and writing down how I solve differe
 
 ---
 
-## 🔍 Platforms
+##  Platforms
 
 Challenges are sorted by the website or platform they came from.
 
 ### **1. TryHackMe**
 My notes and step-by-step solutions for rooms on TryHackMe.
-→ **[Go to /TryHackMe](./TryHackMe/)**
+ **[Go to /TryHackMe](./TryHackMe/)**
 
 ---
 
-## 🧠 My Goal
+##  My Goal
 
 For each lab walkthrough, I try to explain:
 
@@ -30,7 +30,7 @@ The idea is to show my practical skills and to have a record of how I solve prob
 
 ---
 
-## 📈 What's Next
+##  What's Next
 
 As I do more, I'll add more labs from other places:
 

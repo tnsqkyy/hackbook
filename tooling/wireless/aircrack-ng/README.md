@@ -6,7 +6,7 @@ This guide is a simple step-by-step workflow for hacking WiFi, made for learning
 
 ---
 
-## 📌 What's it for?
+##  What's it for?
 
 Aircrack-NG is a collection of tools used for:
 
@@ -130,7 +130,7 @@ This only works if the password is in your wordlist. Strong passwords can be imp
 
 ---
 
-## 📚 Things to Remember
+##  Things to Remember
 
 *   **Monitor mode is special:** It lets your WiFi card listen to everything, like a radio scanner. Normal mode only listens for traffic meant for you.
 *   **WPA2 isn't "broken":** This attack works by guessing weak passwords. It won't work on a strong, random password.
@@ -139,7 +139,7 @@ This only works if the password is in your wordlist. Strong passwords can be imp
 
 ---
 
-## 🚀 Next Steps
+##  Next Steps
 
 *   **hcxdumptool** (a different way to get a hash to crack)
 *   **wifite** (an automatic WiFi hacking tool)
